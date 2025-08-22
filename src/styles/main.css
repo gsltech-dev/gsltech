@@ -1,0 +1,14 @@
+/* body {
+  overflow-x: hidden;
+} */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden !important;
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+}

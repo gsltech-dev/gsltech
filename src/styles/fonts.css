@@ -1,0 +1,50 @@
+/* Satoshi */
+@font-face {
+  font-family: "Satoshi";
+  src: url("/fonts/Satoshi/Satoshi-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Fira Code */
+@font-face {
+  font-family: "Fira Code";
+  src: url("/fonts/FiraCode/FiraCode-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Codec Pro */
+/* Codec Pro - Light */
+@font-face {
+  font-family: "Codec Pro";
+  src: url("/fonts/CodecPro/CodecPro-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Codec Pro - News */
+@font-face {
+  font-family: "Codec Pro";
+  src: url("/fonts/CodecPro/CodecPro-News.woff2") format("woff2");
+  font-weight: 350;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Codec Pro - Regular */
+@font-face {
+  font-family: "Codec Pro";
+  src: url("/fonts/CodecPro/CodecPro-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: "Codec Pro", sans-serif;
+  font-weight: 300;
+}

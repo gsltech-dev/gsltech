@@ -1,7 +1,7 @@
 export const homepageData = {
   introSection: {
     introWords: {
-      left: "test STUDIO123",
+      left: "test STUDIO123ㅇㅇㅇㅇ",
       right: ["ENTHUSIASTIC", "INGENIOUS", "AGILE"],
     },
     introText: {

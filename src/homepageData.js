@@ -2,7 +2,7 @@ export const homepageData = {
   introSection: {
     introWords: {
       left: "test STUDIO",
-      right: ["ENTHUSIASTIC", "INGENIOUS", "AGILE"],
+      right: ["test", "INGENIOUS", "AGILE"],
     },
     introText: {
       text: "Combining creativity and expertise, we reveal the character of brands that stand out in their time.",

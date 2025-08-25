@@ -64,7 +64,7 @@ export default function HomePage({ videoUrls }) {
           {/* section-history */}
           <HistorySection
             data={homepageData.historySection}
-            modalState={{ setIsModalOpen, setModalId, setSection }}
+            // modalState={{ setIsModalOpen, setModalId, setSection }}
           />
           {/* section-expertise */}
           <ExpertiseSection data={homepageData.expertiseSection} />

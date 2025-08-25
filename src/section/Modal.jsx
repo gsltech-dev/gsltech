@@ -263,22 +263,29 @@ const Modal = ({ onClose, modalId, data, section }) => {
         {/* desc-wrapper */}
         <div className="desc-wrapper flex flex-col w-full h-auto  mt-[5vw] font-normal pl-[0.5vw]">
           {/* desc-text */}
-          <div className="desc-text w-full md:w-1/3 mt-[7vw] md:mt-0 text-[4vw] leading-[6vw] md:leading-[1.9vw] md:text-[1.3vw] h-auto ">
+          <div className="desc-text w-full md:w-2/3 mt-[7vw] md:mt-0 text-[4vw] leading-[6vw] md:leading-[1.9vw] md:text-[1.3vw] h-auto ">
             {modalData.desc.texts.map((text, i) => (
               <p key={i}>{text}</p>
             ))}
           </div>
           {/* desc-point */}
-          <div className="desc-point w-full h-auto mt-[6vw] md:mt-0 flex flex-col md:gap-[1.1vw] gap-[2vw] items-end">
+          <div className=" desc-point w-full h-auto mt-[6vw] md:mt-0 flex flex-col md:gap-[0.7vw] gap-[1.8vw] items-end">
             {modalData.desc.points.map((point, i) => (
-              <div className="point-wrapper md:w-3/5 md:h-[4vw] gap-[1vw] md:gap-0 md:px-[1vw] w-full h-auto px-[4vw] py-[6vw] md:py-0 md:rounded-lg rounded-xl flex flex-col md:flex-row justify-start md:items-center md:justify-between bg-[#efefef]">
-                <div className="point-title font-[400] md:text-[1.25vw] text-[4.3vw]">
-                  {point.title}
-                </div>
-                <div className="point-text w-auto font-[350] md:text-[1.1vw] text-[3.4vw]">
-                  {point.text}
-                </div>
+              <div
+                key={i}
+                className=" point-title font-[400] md:text-[1.3vw] text-[4vw]"
+              >
+                {point}
               </div>
+
+              // <div className="point-wrapper md:w-3/5 md:h-[4vw] gap-[1vw] md:gap-0 md:px-[1vw] w-full h-auto px-[4vw] py-[6vw] md:py-0 md:rounded-lg rounded-xl flex flex-col md:flex-row justify-start md:items-center md:justify-between bg-[#efefef]">
+              //   <div className="point-title font-[400] md:text-[1.25vw] text-[4.3vw]">
+              //     {point}
+              //   </div>
+              //   <div className="point-text w-auto font-[350] md:text-[1.1vw] text-[3.4vw]">
+              //     {point}
+              //   </div>
+              // </div>
             ))}
           </div>
         </div>

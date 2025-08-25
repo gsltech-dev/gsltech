@@ -13,6 +13,17 @@ const ExpertiseDesc = ({
   const currentTarget = useRef();
   const tlRef = useRef();
 
+  const runIdRef = useRef(0);
+  const intervalsRef = useRef(new Set());
+  const timeoutsRef = useRef(new Set());
+
+  function clearTimers() {
+    intervalsRef.current.forEach((id) => clearInterval(id));
+    timeoutsRef.current.forEach((id) => clearTimeout(id));
+    intervalsRef.current.clear();
+    timeoutsRef.current.clear();
+  }
+
   const updateTargetData = (i) => {
     const data = i === -1 ? defaultdescriptionData : descriptionData[i];
     setTargetData(data);
@@ -29,6 +40,10 @@ const ExpertiseDesc = ({
 
     //생성기
     const createLogic = () => {
+      tlRef.current?.kill();
+      tlRef.current = null;
+      clearTimers();
+
       setAnimateLevel(2);
       updateTargetData(currentTarget.current); //dom 반영
       requestAnimationFrame(() => {
@@ -50,21 +65,45 @@ const ExpertiseDesc = ({
           const animationTime = 500; //글자 바뀌는게 보이는 시간 ms
           const charset = `ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789`;
 
-          function changeText(span) {
-            span.textContent =
-              charset[Math.floor(Math.random() * charset.length)];
-          }
+          // ✔ runId는 루프 밖에서 한번만 증가
+          const runId = ++runIdRef.current;
+
+          // function changeText(span) {
+          //   span.textContent =
+          //     charset[Math.floor(Math.random() * charset.length)];
+          // }
 
           spans.forEach((span, i) => {
             const originText = span.textContent;
-            const intervalId = setInterval(() => {
-              changeText(span);
+
+            const iid = setInterval(() => {
+              if (runId !== runIdRef.current) return;
+              if (originText.trim() === "") return; // 공백은 건너뛰기(선택)
+              span.textContent =
+                charset[Math.floor(Math.random() * charset.length)];
             }, changeInterval);
-            setTimeout(() => {
-              clearInterval(intervalId);
-              span.textContent = originText;
+            intervalsRef.current.add(iid);
+
+            const tid = setTimeout(() => {
+              clearInterval(iid);
+              intervalsRef.current.delete(iid);
+              if (runId === runIdRef.current) {
+                span.textContent = originText;
+              }
             }, i * duration * 1000 + animationTime);
+            timeoutsRef.current.add(tid);
           });
+
+          // spans.forEach((span, i) => {
+          //   const originText = span.textContent;
+          //   const intervalId = setInterval(() => {
+          //     changeText(span);
+          //   }, changeInterval);
+          //   setTimeout(() => {
+          //     clearInterval(intervalId);
+          //     span.textContent = originText;
+          //   }, i * duration * 1000 + animationTime);
+          // });
 
           createTl.fromTo(
             spans,
@@ -92,6 +131,12 @@ const ExpertiseDesc = ({
         },
       }
     );
+
+    return () => {
+      tlRef.current?.kill();
+      tlRef.current = null;
+      clearTimers();
+    };
   }, [isExperEnter]);
 
   // desc 관련 애니매이션
@@ -105,6 +150,10 @@ const ExpertiseDesc = ({
 
     //생성기
     const createLogic = () => {
+      tlRef.current?.kill();
+      tlRef.current = null;
+      clearTimers();
+
       setAnimateLevel(2);
       updateTargetData(currentTarget.current); //dom 반영
       requestAnimationFrame(() => {
@@ -127,20 +176,44 @@ const ExpertiseDesc = ({
           const animationTime = 500; //글자 바뀌는게 보이는 시간 ms
           const charset = `ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789`;
 
-          function changeText(span) {
-            span.textContent =
-              charset[Math.floor(Math.random() * charset.length)];
-          }
+          // ✔ runId는 루프 밖에서 한번만 증가
+          const runId = ++runIdRef.current;
+
+          // function changeText(span) {
+          //   span.textContent =
+          //     charset[Math.floor(Math.random() * charset.length)];
+          // }
+
+          // spans.forEach((span, i) => {
+          //   const originText = span.textContent;
+          //   const intervalId = setInterval(() => {
+          //     changeText(span);
+          //   }, changeInterval);
+          //   setTimeout(() => {
+          //     clearInterval(intervalId);
+          //     span.textContent = originText;
+          //   }, i * duration * 1000 + animationTime);
+          // });
 
           spans.forEach((span, i) => {
             const originText = span.textContent;
-            const intervalId = setInterval(() => {
-              changeText(span);
+
+            const iid = setInterval(() => {
+              if (runId !== runIdRef.current) return;
+              if (originText.trim() === "") return;
+              span.textContent =
+                charset[Math.floor(Math.random() * charset.length)];
             }, changeInterval);
-            setTimeout(() => {
-              clearInterval(intervalId);
-              span.textContent = originText;
+            intervalsRef.current.add(iid);
+
+            const tid = setTimeout(() => {
+              clearInterval(iid);
+              intervalsRef.current.delete(iid);
+              if (runId === runIdRef.current) {
+                span.textContent = originText;
+              }
             }, i * duration * 1000 + animationTime);
+            timeoutsRef.current.add(tid);
           });
 
           createTl
@@ -167,6 +240,9 @@ const ExpertiseDesc = ({
 
       const deleteTl = gsap.timeline({
         onComplete: () => {
+          tlRef.current?.kill();
+          tlRef.current = null;
+          clearTimers();
           createLogic();
           // gsap.set(deleteWrapper, { opacity: 0 });
         },
@@ -198,6 +274,11 @@ const ExpertiseDesc = ({
       }
       deleteLogic();
     }
+    return () => {
+      tlRef.current?.kill();
+      tlRef.current = null;
+      clearTimers();
+    };
   }, [descTarget]);
 
   return (

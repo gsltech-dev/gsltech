@@ -236,7 +236,7 @@ const HistoryItem = ({
     <div
       key={`history${idx}`}
       ref={historyRef}
-      className="history-item relative flex hover:cursor-pointer justify-center items-center w-full md:aspect-[1/0.073] overflow-hidden aspect-[1/0.17] bg-[#efefef] lg:rounded-2xl md:rounded-lg rounded-md"
+      className="history-item relative flex justify-center items-center w-full md:aspect-[1/0.073] overflow-hidden aspect-[1/0.17] bg-[#efefef] lg:rounded-2xl md:rounded-lg rounded-md"
       onClick={() => {
         handleClick(idx);
       }}
@@ -311,9 +311,6 @@ const HistoryItem = ({
         </div>
       </div>
     </div>
-    // <div>
-    //   <div>aaa</div>
-    // </div>
   );
 };
 

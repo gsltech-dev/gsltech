@@ -7,14 +7,18 @@ import { CustomEase } from "gsap/CustomEase";
 gsap.registerPlugin(CustomEase);
 CustomEase.create("softBurst", "M0,0 C0.5,0.05,0.5,1,1,1");
 
-const HistorySection = ({ data, modalState }) => {
+const HistorySection = ({
+  data,
+  //  modalState
+}) => {
   //모달 제어
-  const { setIsModalOpen, setModalId, setSection } = modalState;
-  const handleClick = (id) => {
-    setModalId(id);
-    setIsModalOpen(true);
-    setSection("history");
-  };
+
+  // const { setIsModalOpen, setModalId, setSection } = modalState;
+  // const handleClick = (id) => {
+  //   setModalId(id);
+  //   setIsModalOpen(true);
+  //   setSection("history");
+  // };
   const btnRef = useRef();
   const [clickMore, setClickMore] = useState(false);
   const dataCount = data.length;
@@ -141,7 +145,7 @@ const HistorySection = ({ data, modalState }) => {
           setRef={(el) => {
             itemRefs.current[i] = el;
           }}
-          handleClick={handleClick}
+          // handleClick={handleClick}
           historyInfo={info}
           key={`history-${i}`}
           idx={i}
@@ -151,7 +155,7 @@ const HistorySection = ({ data, modalState }) => {
       {clickMore ? (
         lastData.map((info, i) => (
           <HistoryItem
-            handleClick={handleClick}
+            // handleClick={handleClick}
             historyInfo={info}
             key={`history-${i + 3}`}
             idx={i + 4}

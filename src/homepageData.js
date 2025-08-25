@@ -221,14 +221,23 @@ export const homepageData = {
             "현재 KOREREN의 철학을 담은 디퍼웨이브를 시작으로 더 다양한 웰니스 솔루션을 선보일 것입니다.",
           ],
           points: [
-            { title: "#회복", text: "#균형" },
-            {
-              title: "#휴식",
-              text: "#에너지",
-            },
-            { title: "#Korea", text: "#Core" },
-            { title: "Renew", text: "Renew" },
+            "#회복",
+            "#균형",
+            "#휴식",
+            "#에너지",
+            "#Korea",
+            "#Core",
+            "Renew",
           ],
+          // points: [
+          //   { title: "#회복", text: "#균형" },
+          //   {
+          //     title: "#휴식",
+          //     text: "#에너지",
+          //   },
+          //   { title: "#Korea", text: "#Core" },
+          //   { title: "Renew", text: "Renew" },
+          // ],
         },
         album: [
           //type은 꼭 image와 video 로 구분
@@ -284,13 +293,14 @@ export const homepageData = {
             "피부에 가장 이상적인 제품 라인업을 개발하고 있습니다.",
             "자연과 기술이 만나 탄생한 차별화된 효능으로, 피부 본연의 건강함을 되찾는 경험을 약속합니다.",
           ],
-          points: [
-            {
-              title: "#온천수",
-              text: "#자연유래",
-            },
-            { title: "#미네랄", text: "#더마솔루션" },
-          ],
+          points: ["#온천수", "#자연유래", "#미네랄", "#더마솔루션"],
+          // points: [
+          //   {
+          //     title: "#온천수",
+          //     text: "#자연유래",
+          //   },
+          //   { title: "#미네랄", text: "#더마솔루션" },
+          // ],
         },
         album: [
           //type은 꼭 image와 video 로 구분
@@ -340,13 +350,15 @@ export const homepageData = {
             "파트너사의 요청에 따른 맞춤형 솔루션 개발도 지원합니다.",
             "향후 디바이스와 연동되는 모바일 앱까지 사업영역을 확장할 수 있는 잠재력을 보유하고 있습니다.",
           ],
-          points: [
-            { title: "#정보", text: "#소프트웨어" },
-            {
-              title: "#디지털",
-              text: "#관리",
-            },
-          ],
+          points: ["#정보", "#소프트웨어", "#디지털", "#관리"],
+
+          // points: [
+          //   { title: "#정보", text: "#소프트웨어" },
+          //   {
+          //     title: "#디지털",
+          //     text: "#관리",
+          //   },
+          // ],
         },
         album: [
           //type은 꼭 image와 video 로 구분
@@ -387,435 +399,435 @@ export const homepageData = {
         ],
       },
     ],
-    history: [
-      {
-        info: {
-          //btnText : null 로 할 경우 btn 영역 삭제
-          types: ["3D", "WEBSITE"],
-          title: "HOMERUN",
-          link: "https://homerun.today/",
-          btnText: "Visit website",
-        },
-        mainImg: "/images/modal/gallery/main/item0.jpeg",
-        desc: {
-          texts: [
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
-            "Voluptas perferendis fugit cumque corrupti? Voluptatum facere obcaecati odio itaque repellendus eius praesentium beatae!",
-          ],
-          points: [
-            { title: "ROLE", text: "UX-UI / 3D / Development" },
-            {
-              title: "AWARDS",
-              text: "SOTD AWWWARDS - FWA - CSS DESIGN - GSAP",
-            },
-            { title: "SOLUTIONS", text: "stroyblock / Netilfy / spline" },
-            { title: "PROJECT DURATION", text: "2 months" },
-          ],
-        },
-        album: [
-          //type은 꼭 image와 video 로 구분
-          [
-            {
-              type: "image",
-              src: "/images/modal/gallery/album/item0-1.jpeg",
-            },
-          ],
-          [
-            {
-              type: "video",
-              src: "/videos/modal/gallery/album/item0-2.mp4",
-            },
-          ],
-          [
-            {
-              type: "video",
-              src: "/videos/modal/gallery/album/item0-3.mp4",
-            },
-          ],
-          [
-            {
-              type: "video",
-              src: "/videos/modal/gallery/album/item0-4.mp4",
-            },
-            {
-              type: "image",
-              src: "/images/modal/gallery/album/item0-5.jpeg",
-            },
-          ],
-          [
-            {
-              type: "image",
-              src: "/images/modal/gallery/album/item0-6.jpeg",
-            },
-          ],
-        ],
-      },
-      {
-        info: {
-          //btnText : null 로 할 경우 btn 영역 삭제
-          types: ["BRANDING", "WEBSITE"],
-          title: "Boa Concept",
-          link: "https://www.youtube.com/",
-          btnText: "Visit website",
-        },
-        mainImg: "/images/modal/gallery/main/item1.jpeg",
-        desc: {
-          texts: [
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
-            "Voluptas perferendis fugit cumque corrupti? Voluptatum facere",
-            " obcaecati odio itaque repellendus eius praesentium beatae!",
-          ],
-          points: [
-            {
-              title: "ROLE",
-              text: "Art Direction / UX-UI / Copywriting/ Development",
-            },
-            { title: "SOLUTIONS", text: "stroyblock / Netilfy / spline" },
-            {
-              title: "CREDITS",
-              text: "In partnership with Sapag",
-            },
-            { title: "PROJECT DURATION", text: "6 months" },
-          ],
-        },
-        album: [
-          //type은 꼭 image와 video 로 구분
-          [
-            {
-              type: "video",
-              src: "/videos/modal/gallery/album/item1-1.mp4",
-            },
-          ],
-          [
-            {
-              type: "video",
-              src: "/videos/modal/gallery/album/item1-2.mp4",
-            },
-            {
-              type: "video",
-              src: "/videos/modal/gallery/album/item1-3.mp4",
-            },
-          ],
-          [
-            {
-              type: "image",
-              src: "/images/modal/gallery/album/item1-4.jpeg",
-            },
-          ],
-          [
-            {
-              type: "video",
-              src: "/videos/modal/gallery/album/item1-5.mp4",
-            },
-          ],
-        ],
-      },
-      {
-        info: {
-          //btnText : null 로 할 경우 btn 영역 삭제
-          types: ["3D", "WEBSITE"],
-          title: "HOMERUN",
-          link: "https://homerun.today/",
-          btnText: "Visit website",
-        },
-        mainImg: "/images/modal/gallery/main/item0.jpeg",
-        desc: {
-          texts: [
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
-            "Voluptas perferendis fugit cumque corrupti? Voluptatum facere obcaecati odio itaque repellendus eius praesentium beatae!",
-          ],
-          points: [
-            { title: "ROLE", text: "UX-UI / 3D / Development" },
-            {
-              title: "AWARDS",
-              text: "SOTD AWWWARDS - FWA - CSS DESIGN - GSAP",
-            },
-            { title: "SOLUTIONS", text: "stroyblock / Netilfy / spline" },
-            { title: "PROJECT DURATION", text: "2 months" },
-          ],
-        },
-        album: [
-          //type은 꼭 image와 video 로 구분
-          [
-            {
-              type: "image",
-              src: "/images/modal/gallery/album/item0-1.jpeg",
-            },
-          ],
-          [
-            {
-              type: "video",
-              src: "/videos/modal/gallery/album/item0-2.mp4",
-            },
-          ],
-          [
-            {
-              type: "video",
-              src: "/videos/modal/gallery/album/item0-3.mp4",
-            },
-          ],
-          [
-            {
-              type: "video",
-              src: "/videos/modal/gallery/album/item0-4.mp4",
-            },
-            {
-              type: "image",
-              src: "/images/modal/gallery/album/item0-5.jpeg",
-            },
-          ],
-          [
-            {
-              type: "image",
-              src: "/images/modal/gallery/album/item0-6.jpeg",
-            },
-          ],
-        ],
-      },
-      {
-        info: {
-          //btnText : null 로 할 경우 btn 영역 삭제
-          types: ["BRANDING", "WEBSITE"],
-          title: "Boa Concept",
-          link: "https://www.youtube.com/",
-          btnText: "Visit website",
-        },
-        mainImg: "/images/modal/gallery/main/item1.jpeg",
-        desc: {
-          texts: [
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
-            "Voluptas perferendis fugit cumque corrupti? Voluptatum facere",
-            " obcaecati odio itaque repellendus eius praesentium beatae!",
-          ],
-          points: [
-            {
-              title: "ROLE",
-              text: "Art Direction / UX-UI / Copywriting/ Development",
-            },
-            { title: "SOLUTIONS", text: "stroyblock / Netilfy / spline" },
-            {
-              title: "CREDITS",
-              text: "In partnership with Sapag",
-            },
-            { title: "PROJECT DURATION", text: "6 months" },
-          ],
-        },
-        album: [
-          //type은 꼭 image와 video 로 구분
-          [
-            {
-              type: "video",
-              src: "/videos/modal/gallery/album/item1-1.mp4",
-            },
-          ],
-          [
-            {
-              type: "video",
-              src: "/videos/modal/gallery/album/item1-2.mp4",
-            },
-            {
-              type: "video",
-              src: "/videos/modal/gallery/album/item1-3.mp4",
-            },
-          ],
-          [
-            {
-              type: "image",
-              src: "/images/modal/gallery/album/item1-4.jpeg",
-            },
-          ],
-          [
-            {
-              type: "video",
-              src: "/videos/modal/gallery/album/item1-5.mp4",
-            },
-          ],
-        ],
-      },
-      {
-        info: {
-          //btnText : null 로 할 경우 btn 영역 삭제
-          types: ["3D", "WEBSITE"],
-          title: "HOMERUN",
-          link: "https://homerun.today/",
-          btnText: "Visit website",
-        },
-        mainImg: "/images/modal/gallery/main/item0.jpeg",
-        desc: {
-          texts: [
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
-            "Voluptas perferendis fugit cumque corrupti? Voluptatum facere obcaecati odio itaque repellendus eius praesentium beatae!",
-          ],
-          points: [
-            { title: "ROLE", text: "UX-UI / 3D / Development" },
-            {
-              title: "AWARDS",
-              text: "SOTD AWWWARDS - FWA - CSS DESIGN - GSAP",
-            },
-            { title: "SOLUTIONS", text: "stroyblock / Netilfy / spline" },
-            { title: "PROJECT DURATION", text: "2 months" },
-          ],
-        },
-        album: [
-          //type은 꼭 image와 video 로 구분
-          [
-            {
-              type: "image",
-              src: "/images/modal/gallery/album/item0-1.jpeg",
-            },
-          ],
-          [
-            {
-              type: "video",
-              src: "/videos/modal/gallery/album/item0-2.mp4",
-            },
-          ],
-          [
-            {
-              type: "video",
-              src: "/videos/modal/gallery/album/item0-3.mp4",
-            },
-          ],
-          [
-            {
-              type: "video",
-              src: "/videos/modal/gallery/album/item0-4.mp4",
-            },
-            {
-              type: "image",
-              src: "/images/modal/gallery/album/item0-5.jpeg",
-            },
-          ],
-          [
-            {
-              type: "image",
-              src: "/images/modal/gallery/album/item0-6.jpeg",
-            },
-          ],
-        ],
-      },
-      {
-        info: {
-          //btnText : null 로 할 경우 btn 영역 삭제
-          types: ["BRANDING", "WEBSITE"],
-          title: "Boa Concept",
-          link: "https://www.youtube.com/",
-          btnText: "Visit website",
-        },
-        mainImg: "/images/modal/gallery/main/item1.jpeg",
-        desc: {
-          texts: [
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
-            "Voluptas perferendis fugit cumque corrupti? Voluptatum facere",
-            " obcaecati odio itaque repellendus eius praesentium beatae!",
-          ],
-          points: [
-            {
-              title: "ROLE",
-              text: "Art Direction / UX-UI / Copywriting/ Development",
-            },
-            { title: "SOLUTIONS", text: "stroyblock / Netilfy / spline" },
-            {
-              title: "CREDITS",
-              text: "In partnership with Sapag",
-            },
-            { title: "PROJECT DURATION", text: "6 months" },
-          ],
-        },
-        album: [
-          //type은 꼭 image와 video 로 구분
-          [
-            {
-              type: "video",
-              src: "/videos/modal/gallery/album/item1-1.mp4",
-            },
-          ],
-          [
-            {
-              type: "video",
-              src: "/videos/modal/gallery/album/item1-2.mp4",
-            },
-            {
-              type: "video",
-              src: "/videos/modal/gallery/album/item1-3.mp4",
-            },
-          ],
-          [
-            {
-              type: "image",
-              src: "/images/modal/gallery/album/item1-4.jpeg",
-            },
-          ],
-          [
-            {
-              type: "video",
-              src: "/videos/modal/gallery/album/item1-5.mp4",
-            },
-          ],
-        ],
-      },
-      {
-        info: {
-          //btnText : null 로 할 경우 btn 영역 삭제
-          types: ["3D", "WEBSITE"],
-          title: "HOMERUN",
-          link: "https://homerun.today/",
-          btnText: "Visit website",
-        },
-        mainImg: "/images/modal/gallery/main/item0.jpeg",
-        desc: {
-          texts: [
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
-            "Voluptas perferendis fugit cumque corrupti? Voluptatum facere obcaecati odio itaque repellendus eius praesentium beatae!",
-          ],
-          points: [
-            { title: "ROLE", text: "UX-UI / 3D / Development" },
-            {
-              title: "AWARDS",
-              text: "SOTD AWWWARDS - FWA - CSS DESIGN - GSAP",
-            },
-            { title: "SOLUTIONS", text: "stroyblock / Netilfy / spline" },
-            { title: "PROJECT DURATION", text: "2 months" },
-          ],
-        },
-        album: [
-          //type은 꼭 image와 video 로 구분
-          [
-            {
-              type: "image",
-              src: "/images/modal/gallery/album/item0-1.jpeg",
-            },
-          ],
-          [
-            {
-              type: "video",
-              src: "/videos/modal/gallery/album/item0-2.mp4",
-            },
-          ],
-          [
-            {
-              type: "video",
-              src: "/videos/modal/gallery/album/item0-3.mp4",
-            },
-          ],
-          [
-            {
-              type: "video",
-              src: "/videos/modal/gallery/album/item0-4.mp4",
-            },
-            {
-              type: "image",
-              src: "/images/modal/gallery/album/item0-5.jpeg",
-            },
-          ],
-          [
-            {
-              type: "image",
-              src: "/images/modal/gallery/album/item0-6.jpeg",
-            },
-          ],
-        ],
-      },
-    ],
+    // history: [
+    //   {
+    //     info: {
+    //       //btnText : null 로 할 경우 btn 영역 삭제
+    //       types: ["3D", "WEBSITE"],
+    //       title: "HOMERUN",
+    //       link: "https://homerun.today/",
+    //       btnText: "Visit website",
+    //     },
+    //     mainImg: "/images/modal/gallery/main/item0.jpeg",
+    //     desc: {
+    //       texts: [
+    //         "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
+    //         "Voluptas perferendis fugit cumque corrupti? Voluptatum facere obcaecati odio itaque repellendus eius praesentium beatae!",
+    //       ],
+    //       points: [
+    //         { title: "ROLE", text: "UX-UI / 3D / Development" },
+    //         {
+    //           title: "AWARDS",
+    //           text: "SOTD AWWWARDS - FWA - CSS DESIGN - GSAP",
+    //         },
+    //         { title: "SOLUTIONS", text: "stroyblock / Netilfy / spline" },
+    //         { title: "PROJECT DURATION", text: "2 months" },
+    //       ],
+    //     },
+    //     album: [
+    //       //type은 꼭 image와 video 로 구분
+    //       [
+    //         {
+    //           type: "image",
+    //           src: "/images/modal/gallery/album/item0-1.jpeg",
+    //         },
+    //       ],
+    //       [
+    //         {
+    //           type: "video",
+    //           src: "/videos/modal/gallery/album/item0-2.mp4",
+    //         },
+    //       ],
+    //       [
+    //         {
+    //           type: "video",
+    //           src: "/videos/modal/gallery/album/item0-3.mp4",
+    //         },
+    //       ],
+    //       [
+    //         {
+    //           type: "video",
+    //           src: "/videos/modal/gallery/album/item0-4.mp4",
+    //         },
+    //         {
+    //           type: "image",
+    //           src: "/images/modal/gallery/album/item0-5.jpeg",
+    //         },
+    //       ],
+    //       [
+    //         {
+    //           type: "image",
+    //           src: "/images/modal/gallery/album/item0-6.jpeg",
+    //         },
+    //       ],
+    //     ],
+    //   },
+    //   {
+    //     info: {
+    //       //btnText : null 로 할 경우 btn 영역 삭제
+    //       types: ["BRANDING", "WEBSITE"],
+    //       title: "Boa Concept",
+    //       link: "https://www.youtube.com/",
+    //       btnText: "Visit website",
+    //     },
+    //     mainImg: "/images/modal/gallery/main/item1.jpeg",
+    //     desc: {
+    //       texts: [
+    //         "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
+    //         "Voluptas perferendis fugit cumque corrupti? Voluptatum facere",
+    //         " obcaecati odio itaque repellendus eius praesentium beatae!",
+    //       ],
+    //       points: [
+    //         {
+    //           title: "ROLE",
+    //           text: "Art Direction / UX-UI / Copywriting/ Development",
+    //         },
+    //         { title: "SOLUTIONS", text: "stroyblock / Netilfy / spline" },
+    //         {
+    //           title: "CREDITS",
+    //           text: "In partnership with Sapag",
+    //         },
+    //         { title: "PROJECT DURATION", text: "6 months" },
+    //       ],
+    //     },
+    //     album: [
+    //       //type은 꼭 image와 video 로 구분
+    //       [
+    //         {
+    //           type: "video",
+    //           src: "/videos/modal/gallery/album/item1-1.mp4",
+    //         },
+    //       ],
+    //       [
+    //         {
+    //           type: "video",
+    //           src: "/videos/modal/gallery/album/item1-2.mp4",
+    //         },
+    //         {
+    //           type: "video",
+    //           src: "/videos/modal/gallery/album/item1-3.mp4",
+    //         },
+    //       ],
+    //       [
+    //         {
+    //           type: "image",
+    //           src: "/images/modal/gallery/album/item1-4.jpeg",
+    //         },
+    //       ],
+    //       [
+    //         {
+    //           type: "video",
+    //           src: "/videos/modal/gallery/album/item1-5.mp4",
+    //         },
+    //       ],
+    //     ],
+    //   },
+    //   {
+    //     info: {
+    //       //btnText : null 로 할 경우 btn 영역 삭제
+    //       types: ["3D", "WEBSITE"],
+    //       title: "HOMERUN",
+    //       link: "https://homerun.today/",
+    //       btnText: "Visit website",
+    //     },
+    //     mainImg: "/images/modal/gallery/main/item0.jpeg",
+    //     desc: {
+    //       texts: [
+    //         "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
+    //         "Voluptas perferendis fugit cumque corrupti? Voluptatum facere obcaecati odio itaque repellendus eius praesentium beatae!",
+    //       ],
+    //       points: [
+    //         { title: "ROLE", text: "UX-UI / 3D / Development" },
+    //         {
+    //           title: "AWARDS",
+    //           text: "SOTD AWWWARDS - FWA - CSS DESIGN - GSAP",
+    //         },
+    //         { title: "SOLUTIONS", text: "stroyblock / Netilfy / spline" },
+    //         { title: "PROJECT DURATION", text: "2 months" },
+    //       ],
+    //     },
+    //     album: [
+    //       //type은 꼭 image와 video 로 구분
+    //       [
+    //         {
+    //           type: "image",
+    //           src: "/images/modal/gallery/album/item0-1.jpeg",
+    //         },
+    //       ],
+    //       [
+    //         {
+    //           type: "video",
+    //           src: "/videos/modal/gallery/album/item0-2.mp4",
+    //         },
+    //       ],
+    //       [
+    //         {
+    //           type: "video",
+    //           src: "/videos/modal/gallery/album/item0-3.mp4",
+    //         },
+    //       ],
+    //       [
+    //         {
+    //           type: "video",
+    //           src: "/videos/modal/gallery/album/item0-4.mp4",
+    //         },
+    //         {
+    //           type: "image",
+    //           src: "/images/modal/gallery/album/item0-5.jpeg",
+    //         },
+    //       ],
+    //       [
+    //         {
+    //           type: "image",
+    //           src: "/images/modal/gallery/album/item0-6.jpeg",
+    //         },
+    //       ],
+    //     ],
+    //   },
+    //   {
+    //     info: {
+    //       //btnText : null 로 할 경우 btn 영역 삭제
+    //       types: ["BRANDING", "WEBSITE"],
+    //       title: "Boa Concept",
+    //       link: "https://www.youtube.com/",
+    //       btnText: "Visit website",
+    //     },
+    //     mainImg: "/images/modal/gallery/main/item1.jpeg",
+    //     desc: {
+    //       texts: [
+    //         "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
+    //         "Voluptas perferendis fugit cumque corrupti? Voluptatum facere",
+    //         " obcaecati odio itaque repellendus eius praesentium beatae!",
+    //       ],
+    //       points: [
+    //         {
+    //           title: "ROLE",
+    //           text: "Art Direction / UX-UI / Copywriting/ Development",
+    //         },
+    //         { title: "SOLUTIONS", text: "stroyblock / Netilfy / spline" },
+    //         {
+    //           title: "CREDITS",
+    //           text: "In partnership with Sapag",
+    //         },
+    //         { title: "PROJECT DURATION", text: "6 months" },
+    //       ],
+    //     },
+    //     album: [
+    //       //type은 꼭 image와 video 로 구분
+    //       [
+    //         {
+    //           type: "video",
+    //           src: "/videos/modal/gallery/album/item1-1.mp4",
+    //         },
+    //       ],
+    //       [
+    //         {
+    //           type: "video",
+    //           src: "/videos/modal/gallery/album/item1-2.mp4",
+    //         },
+    //         {
+    //           type: "video",
+    //           src: "/videos/modal/gallery/album/item1-3.mp4",
+    //         },
+    //       ],
+    //       [
+    //         {
+    //           type: "image",
+    //           src: "/images/modal/gallery/album/item1-4.jpeg",
+    //         },
+    //       ],
+    //       [
+    //         {
+    //           type: "video",
+    //           src: "/videos/modal/gallery/album/item1-5.mp4",
+    //         },
+    //       ],
+    //     ],
+    //   },
+    //   {
+    //     info: {
+    //       //btnText : null 로 할 경우 btn 영역 삭제
+    //       types: ["3D", "WEBSITE"],
+    //       title: "HOMERUN",
+    //       link: "https://homerun.today/",
+    //       btnText: "Visit website",
+    //     },
+    //     mainImg: "/images/modal/gallery/main/item0.jpeg",
+    //     desc: {
+    //       texts: [
+    //         "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
+    //         "Voluptas perferendis fugit cumque corrupti? Voluptatum facere obcaecati odio itaque repellendus eius praesentium beatae!",
+    //       ],
+    //       points: [
+    //         { title: "ROLE", text: "UX-UI / 3D / Development" },
+    //         {
+    //           title: "AWARDS",
+    //           text: "SOTD AWWWARDS - FWA - CSS DESIGN - GSAP",
+    //         },
+    //         { title: "SOLUTIONS", text: "stroyblock / Netilfy / spline" },
+    //         { title: "PROJECT DURATION", text: "2 months" },
+    //       ],
+    //     },
+    //     album: [
+    //       //type은 꼭 image와 video 로 구분
+    //       [
+    //         {
+    //           type: "image",
+    //           src: "/images/modal/gallery/album/item0-1.jpeg",
+    //         },
+    //       ],
+    //       [
+    //         {
+    //           type: "video",
+    //           src: "/videos/modal/gallery/album/item0-2.mp4",
+    //         },
+    //       ],
+    //       [
+    //         {
+    //           type: "video",
+    //           src: "/videos/modal/gallery/album/item0-3.mp4",
+    //         },
+    //       ],
+    //       [
+    //         {
+    //           type: "video",
+    //           src: "/videos/modal/gallery/album/item0-4.mp4",
+    //         },
+    //         {
+    //           type: "image",
+    //           src: "/images/modal/gallery/album/item0-5.jpeg",
+    //         },
+    //       ],
+    //       [
+    //         {
+    //           type: "image",
+    //           src: "/images/modal/gallery/album/item0-6.jpeg",
+    //         },
+    //       ],
+    //     ],
+    //   },
+    //   {
+    //     info: {
+    //       //btnText : null 로 할 경우 btn 영역 삭제
+    //       types: ["BRANDING", "WEBSITE"],
+    //       title: "Boa Concept",
+    //       link: "https://www.youtube.com/",
+    //       btnText: "Visit website",
+    //     },
+    //     mainImg: "/images/modal/gallery/main/item1.jpeg",
+    //     desc: {
+    //       texts: [
+    //         "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
+    //         "Voluptas perferendis fugit cumque corrupti? Voluptatum facere",
+    //         " obcaecati odio itaque repellendus eius praesentium beatae!",
+    //       ],
+    //       points: [
+    //         {
+    //           title: "ROLE",
+    //           text: "Art Direction / UX-UI / Copywriting/ Development",
+    //         },
+    //         { title: "SOLUTIONS", text: "stroyblock / Netilfy / spline" },
+    //         {
+    //           title: "CREDITS",
+    //           text: "In partnership with Sapag",
+    //         },
+    //         { title: "PROJECT DURATION", text: "6 months" },
+    //       ],
+    //     },
+    //     album: [
+    //       //type은 꼭 image와 video 로 구분
+    //       [
+    //         {
+    //           type: "video",
+    //           src: "/videos/modal/gallery/album/item1-1.mp4",
+    //         },
+    //       ],
+    //       [
+    //         {
+    //           type: "video",
+    //           src: "/videos/modal/gallery/album/item1-2.mp4",
+    //         },
+    //         {
+    //           type: "video",
+    //           src: "/videos/modal/gallery/album/item1-3.mp4",
+    //         },
+    //       ],
+    //       [
+    //         {
+    //           type: "image",
+    //           src: "/images/modal/gallery/album/item1-4.jpeg",
+    //         },
+    //       ],
+    //       [
+    //         {
+    //           type: "video",
+    //           src: "/videos/modal/gallery/album/item1-5.mp4",
+    //         },
+    //       ],
+    //     ],
+    //   },
+    //   {
+    //     info: {
+    //       //btnText : null 로 할 경우 btn 영역 삭제
+    //       types: ["3D", "WEBSITE"],
+    //       title: "HOMERUN",
+    //       link: "https://homerun.today/",
+    //       btnText: "Visit website",
+    //     },
+    //     mainImg: "/images/modal/gallery/main/item0.jpeg",
+    //     desc: {
+    //       texts: [
+    //         "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
+    //         "Voluptas perferendis fugit cumque corrupti? Voluptatum facere obcaecati odio itaque repellendus eius praesentium beatae!",
+    //       ],
+    //       points: [
+    //         { title: "ROLE", text: "UX-UI / 3D / Development" },
+    //         {
+    //           title: "AWARDS",
+    //           text: "SOTD AWWWARDS - FWA - CSS DESIGN - GSAP",
+    //         },
+    //         { title: "SOLUTIONS", text: "stroyblock / Netilfy / spline" },
+    //         { title: "PROJECT DURATION", text: "2 months" },
+    //       ],
+    //     },
+    //     album: [
+    //       //type은 꼭 image와 video 로 구분
+    //       [
+    //         {
+    //           type: "image",
+    //           src: "/images/modal/gallery/album/item0-1.jpeg",
+    //         },
+    //       ],
+    //       [
+    //         {
+    //           type: "video",
+    //           src: "/videos/modal/gallery/album/item0-2.mp4",
+    //         },
+    //       ],
+    //       [
+    //         {
+    //           type: "video",
+    //           src: "/videos/modal/gallery/album/item0-3.mp4",
+    //         },
+    //       ],
+    //       [
+    //         {
+    //           type: "video",
+    //           src: "/videos/modal/gallery/album/item0-4.mp4",
+    //         },
+    //         {
+    //           type: "image",
+    //           src: "/images/modal/gallery/album/item0-5.jpeg",
+    //         },
+    //       ],
+    //       [
+    //         {
+    //           type: "image",
+    //           src: "/images/modal/gallery/album/item0-6.jpeg",
+    //         },
+    //       ],
+    //     ],
+    //   },
+    // ],
   },
 };

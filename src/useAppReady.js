@@ -4,6 +4,7 @@ import Lenis from "@studio-freight/lenis";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import FontFaceObserver from "fontfaceobserver";
+import { homepageData } from "./homepageData";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -11,11 +12,7 @@ export default function useAppReady({ setProgress, setIsReady }) {
   const [lenis, setLenis] = useState(null);
   const [videoBlobUrls, setVideoBlobUrls] = useState([]);
 
-  const videoPaths = [
-    "/videos/intro/glass.mp4",
-    "/videos/intro/cookie.mp4",
-    "/videos/intro/ballwoon.mp4",
-  ];
+  const videoPaths = homepageData.introSection.introVideos;
 
   useEffect(() => {
     let lenisInstance;

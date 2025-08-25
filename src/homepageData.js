@@ -1,5 +1,10 @@
 export const homepageData = {
   introSection: {
+    introVideos: [
+      "videos/intro/technology.mp4",
+      "videos/intro/qualityOfLife.mov",
+      "videos/intro/wellness.mp4",
+    ],
     introWords: {
       left: "GSLTECH",
       right: ["TECHNOLOGY", "WELLNESS", "QUALITY OF LIFE"],
@@ -8,16 +13,7 @@ export const homepageData = {
       text: "Building a healthy foundation for your daily life, with technology and empathy",
       lineBreaks: {
         pc: ["foundation", "life,"],
-        mobile: [
-          "Combining",
-          "and",
-          "expertise,",
-          "the",
-          "of",
-          "that",
-          "their",
-          "time",
-        ],
+        mobile: ["healthy", "foundation", "life,", "technology"],
       },
     },
   },
@@ -26,24 +22,24 @@ export const homepageData = {
       {
         title: "KOREREN",
         sub: ["Healthcare brand"],
-        image: "/images/gallery/gallery-item1.jpeg",
-        video: "/videos/gallery/gallery-item1.mp4",
+        image: "/images/gallery/gallery-koreren.jpg",
+        video: "/videos/gallery/gallery-koreren.mov",
       },
     ],
     [
       {
         title: "COSMETICS",
         sub: ["Cosmetic brand"],
-        image: "/images/gallery/gallery-item3.jpeg",
-        video: "/videos/gallery/gallery-item3.mp4",
+        image: "/images/gallery/gallery-cosmetic.jpg",
+        video: "/videos/gallery/gallery-cosmetic.mp4",
       },
     ],
     [
       {
         title: "IT Devlopment",
         sub: ["Website", "CRM"],
-        image: "/images/gallery/gallery-item4.jpeg",
-        video: "/videos/gallery/gallery-item4.mp4",
+        image: "/images/gallery/gallery-ITdevelope.jpg",
+        video: "/videos/gallery/gallery-ITdevelope.mp4",
       },
     ],
   ],
@@ -186,7 +182,7 @@ export const homepageData = {
   partnersSection: [
     {
       name: "GSLAND",
-      img: "/images/partner/kia.jpeg",
+      img: "/images/partner/gsland.jpg",
       link: "https://www.gsland-global.com",
     },
   ],

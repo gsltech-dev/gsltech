@@ -50,11 +50,13 @@ export default function VideoSequence({ introTextRefs, videoUrls }) {
         }
       );
 
+      console.log(nextVideo);
       // 다음 비디오 아래 배치
       gsap.set(nextVideo, {
         display: "block",
         y: "100%",
         opacity: 1,
+        zIndex: 2,
       });
 
       // 다음 비디오 올라오는 효과
@@ -62,6 +64,9 @@ export default function VideoSequence({ introTextRefs, videoUrls }) {
         y: "0%",
         duration: 1,
         ease: "power3.out",
+        onStart: () => {
+          gsap.set(currentVideo, { zIndex: 1 });
+        },
         onComplete: () => {
           gsap.set(currentVideo, { display: "none" });
           currentIndex = nextIndex;
@@ -70,6 +75,7 @@ export default function VideoSequence({ introTextRefs, videoUrls }) {
       });
     };
 
+    //처음 playnext 시작 시간
     const timer = setTimeout(playNext, 7000);
     return () => clearTimeout(timer);
   }, []);
@@ -92,37 +98,5 @@ export default function VideoSequence({ introTextRefs, videoUrls }) {
         />
       ))}
     </div>
-    // <div
-    //   ref={wrapperRef}
-    //   className="absolute w-full h-full inset-0 overflow-hidden rounded-lg"
-    // >
-    //   <video
-    //     ref={(el) => (videoRefs.current[0] = el)}
-    //     className="absolute inset-0 w-full h-full object-cover"
-    //     src={glassIntroVideo}
-    //     autoPlay
-    //     muted
-    //     playsInline
-    //     loop
-    //   />
-    //   <video
-    //     ref={(el) => (videoRefs.current[1] = el)}
-    //     className="absolute inset-0 w-full h-full object-cover"
-    //     src={cookieIntroVideo}
-    //     autoPlay
-    //     muted
-    //     playsInline
-    //     loop
-    //   />
-    //   <video
-    //     ref={(el) => (videoRefs.current[2] = el)}
-    //     className="absolute inset-0 w-full h-full object-cover"
-    //     src={ballwoonIntroVideo}
-    //     autoPlay
-    //     muted
-    //     playsInline
-    //     loop
-    //   />
-    // </div>
   );
 }

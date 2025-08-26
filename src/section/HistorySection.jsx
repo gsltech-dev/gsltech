@@ -170,7 +170,7 @@ const HistorySection = ({
         ) : (
           <button
             ref={btnRef}
-            className="moreBtn w-full h-auto overflow-hidden relative py-[2.4vw] md:py-[1vw] hover:cursor-pointer align-middle text-[3.2vw] font-[350] md:font-[350] md:text-[1.1vw] lg:text-[1vw] md:min-w-[130px] flex justify-center items-center  lg:rounded-2xl md:rounded-lg rounded-md bg-[#efefef] "
+            className="moreBtn w-full h-auto overflow-hidden relative py-[2.4vw] md:py-[1vw] hover:cursor-pointer align-middle text-[3.2vw] font-[350] md:font-[350] md:text-[1.1vw] lg:text-[1vw] md:min-w-[130px] flex justify-center items-center  lg:rounded-2xl md:rounded-lg rounded-md bg-white "
             onClick={() => {
               setClickMore(true);
             }}

@@ -269,11 +269,11 @@ const Modal = ({ onClose, modalId, data, section }) => {
             ))}
           </div>
           {/* desc-point */}
-          <div className=" desc-point w-full h-auto mt-[6vw] md:mt-0 flex flex-col md:gap-[0.7vw] gap-[1.8vw] items-end">
+          <div className=" desc-point w-full h-auto mt-[6vw] md:mt-[4vw] flex flex-col md:gap-[0vw] gap-[1vw] items-end">
             {modalData.desc.points.map((point, i) => (
               <div
                 key={i}
-                className=" point-title font-[400] md:text-[1.3vw] text-[4vw]"
+                className=" point-title font-[500] md:text-[1.6vw] text-[4.3vw]"
               >
                 {point}
               </div>

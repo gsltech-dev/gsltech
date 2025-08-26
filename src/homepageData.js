@@ -2,8 +2,8 @@ export const homepageData = {
   introSection: {
     introVideos: [
       "videos/intro/technology.mp4",
-      "videos/intro/qualityOfLife.mov",
       "videos/intro/wellness.mp4",
+      "videos/intro/qualityOfLife.mp4",
     ],
     introWords: {
       left: "GSLTECH",
@@ -22,15 +22,15 @@ export const homepageData = {
       {
         title: "KOREREN",
         sub: ["Healthcare brand"],
-        image: "/images/gallery/gallery-koreren.jpg",
-        video: "/videos/gallery/gallery-koreren.mov",
+        image: "/images/gallery/gallery-koreren.webp",
+        video: "/videos/gallery/gallery-koreren.mp4",
       },
     ],
     [
       {
         title: "COSMETICS",
         sub: ["Cosmetic brand"],
-        image: "/images/gallery/gallery-cosmetic.jpg",
+        image: "/images/gallery/gallery-cosmetic.webp",
         video: "/videos/gallery/gallery-cosmetic.mp4",
       },
     ],
@@ -38,8 +38,22 @@ export const homepageData = {
       {
         title: "IT Devlopment",
         sub: ["Website", "CRM"],
-        image: "/images/gallery/gallery-ITdevelope.jpg",
-        video: "/videos/gallery/gallery-ITdevelope.mp4",
+        image: "/images/gallery/gallery-ITdevelop.webp",
+        video: "/videos/gallery/gallery-ITdevelop.mp4",
+      },
+    ],
+    [
+      {
+        title: "HPENC",
+        sub: ["Website", "Homepage"],
+        image: "/images/gallery/gallery-ITdevelop.webp",
+        video: "/videos/gallery/gallery-ITdevelop.mp4",
+      },
+      {
+        title: "MELO CRM",
+        sub: ["Website", "CRM", "Management"],
+        image: "/images/gallery/gallery-ITdevelop.webp",
+        video: "/videos/gallery/gallery-ITdevelop.mp4",
       },
     ],
   ],
@@ -88,7 +102,7 @@ export const homepageData = {
       "INTEGRATION",
       "INNOVATION",
     ],
-    default_video: "/videos/gallery/gallery-item3.mp4",
+    default_video: "/videos/expertise/technology.mp4",
     //title과 description, video는 각 순서에 대응
     title: [
       "Product R&D",
@@ -130,19 +144,17 @@ export const homepageData = {
       ],
     ],
     video: [
-      "/videos/expertise/expertise-item1.mp4",
-      "/videos/expertise/expertise-item2.mp4",
-      "/videos/expertise/expertise-item3.mp4",
-      "/videos/expertise/expertise-item4.mp4",
-      "/videos/expertise/expertise-item5.mp4",
-      "/videos/expertise/expertise-item1.mp4",
-      "/videos/expertise/expertise-item2.mp4",
+      "/videos/expertise/productRD.mp4",
+      "/videos/expertise/quality.mp4",
+      "/videos/expertise/manufacturing.mp4",
+      "/videos/expertise/website.mp4",
+      "/videos/expertise/application.mp4",
     ],
   },
   partnersSection: [
     {
       name: "GSLAND",
-      img: "/images/partner/gsland.jpg",
+      img: "/images/partner/gsland.webp",
       link: "https://www.gsland-global.com",
     },
   ],
@@ -168,7 +180,7 @@ export const homepageData = {
           link: "https://homerun.today/",
           btnText: "Visit website",
         },
-        mainImg: "/images/modal/gallery/main/item0.jpeg",
+        mainImg: "/images/modal/gallery/main/modal-main-koreren.webp",
         desc: {
           texts: [
             "모든 웰니스의 시작점인 중심(core)을 다시 세우기 위해, 헬스케어 브랜드 KOREREN을 선보입니다. ",
@@ -185,50 +197,31 @@ export const homepageData = {
             "#Core",
             "Renew",
           ],
-          // points: [
-          //   { title: "#회복", text: "#균형" },
-          //   {
-          //     title: "#휴식",
-          //     text: "#에너지",
-          //   },
-          //   { title: "#Korea", text: "#Core" },
-          //   { title: "Renew", text: "Renew" },
-          // ],
         },
         album: [
           //type은 꼭 image와 video 로 구분
           [
             {
               type: "image",
-              src: "/images/modal/gallery/album/item0-1.jpeg",
-            },
-          ],
-          [
-            {
-              type: "video",
-              src: "/videos/modal/gallery/album/item0-2.mp4",
-            },
-          ],
-          [
-            {
-              type: "video",
-              src: "/videos/modal/gallery/album/item0-3.mp4",
-            },
-          ],
-          [
-            {
-              type: "video",
-              src: "/videos/modal/gallery/album/item0-4.mp4",
-            },
-            {
-              type: "image",
-              src: "/images/modal/gallery/album/item0-5.jpeg",
+              src: "/images/modal/gallery/album/modal-album-koreren1.webp",
             },
           ],
           [
             {
               type: "image",
-              src: "/images/modal/gallery/album/item0-6.jpeg",
+              src: "/images/modal/gallery/album/modal-album-koreren2.webp",
+            },
+          ],
+          [
+            {
+              type: "image",
+              src: "/images/modal/gallery/album/modal-album-koreren3.webp",
+            },
+          ],
+          [
+            {
+              type: "image",
+              src: "/images/modal/gallery/album/modal-album-koreren4.webp",
             },
           ],
         ],
@@ -241,7 +234,7 @@ export const homepageData = {
           link: "https://www.youtube.com/",
           btnText: "Visit website",
         },
-        mainImg: "/images/modal/gallery/main/item1.jpeg",
+        mainImg: "/images/modal/gallery/main/modal-main-cosmetic.webp",
         desc: {
           texts: [
             "자연이 주는 순수한 에너지를 피부에 온전히 전달하기 위해, 새로운 뷰티 솔루션을 연구합니다. ",
@@ -250,42 +243,29 @@ export const homepageData = {
             "자연과 기술이 만나 탄생한 차별화된 효능으로, 피부 본연의 건강함을 되찾는 경험을 약속합니다.",
           ],
           points: ["#온천수", "#자연유래", "#미네랄", "#더마솔루션"],
-          // points: [
-          //   {
-          //     title: "#온천수",
-          //     text: "#자연유래",
-          //   },
-          //   { title: "#미네랄", text: "#더마솔루션" },
-          // ],
         },
         album: [
           //type은 꼭 image와 video 로 구분
           [
             {
-              type: "video",
-              src: "/videos/modal/gallery/album/item1-1.mp4",
+              type: "image",
+              src: "/images/modal/gallery/album/modal-album-cosmetic1.webp",
             },
           ],
           [
             {
               type: "video",
-              src: "/videos/modal/gallery/album/item1-2.mp4",
+              src: "/videos/modal/gallery/album/modal-album-cosmetic1.mp4",
             },
             {
               type: "video",
-              src: "/videos/modal/gallery/album/item1-3.mp4",
+              src: "/videos/modal/gallery/album/modal-album-cosmetic2.mp4",
             },
           ],
           [
             {
               type: "image",
-              src: "/images/modal/gallery/album/item1-4.jpeg",
-            },
-          ],
-          [
-            {
-              type: "video",
-              src: "/videos/modal/gallery/album/item1-5.mp4",
+              src: "/images/modal/gallery/album/modal-album-cosmetic2.webp",
             },
           ],
         ],
@@ -298,7 +278,7 @@ export const homepageData = {
           link: "https://homerun.today/",
           btnText: "Visit website",
         },
-        mainImg: "/images/modal/gallery/main/item0.jpeg",
+        mainImg: "/images/modal/gallery/main/modal-main-ITdevelop.webp",
         desc: {
           texts: [
             "GSLTECH의 IT개발팀은 브랜드와 비즈니스 운영에 필요한 핵심 디지털 솔루션을 직접 개발합니다",
@@ -307,49 +287,19 @@ export const homepageData = {
             "향후 디바이스와 연동되는 모바일 앱까지 사업영역을 확장할 수 있는 잠재력을 보유하고 있습니다.",
           ],
           points: ["#정보", "#소프트웨어", "#디지털", "#관리"],
-
-          // points: [
-          //   { title: "#정보", text: "#소프트웨어" },
-          //   {
-          //     title: "#디지털",
-          //     text: "#관리",
-          //   },
-          // ],
         },
         album: [
           //type은 꼭 image와 video 로 구분
           [
             {
               type: "image",
-              src: "/images/modal/gallery/album/item0-1.jpeg",
-            },
-          ],
-          [
-            {
-              type: "video",
-              src: "/videos/modal/gallery/album/item0-2.mp4",
-            },
-          ],
-          [
-            {
-              type: "video",
-              src: "/videos/modal/gallery/album/item0-3.mp4",
-            },
-          ],
-          [
-            {
-              type: "video",
-              src: "/videos/modal/gallery/album/item0-4.mp4",
-            },
-            {
-              type: "image",
-              src: "/images/modal/gallery/album/item0-5.jpeg",
+              src: "/images/modal/gallery/album/modal-album-ITdevelop1.webp",
             },
           ],
           [
             {
               type: "image",
-              src: "/images/modal/gallery/album/item0-6.jpeg",
+              src: "/images/modal/gallery/album/modal-album-ITdevelop2.webp",
             },
           ],
         ],
@@ -364,7 +314,7 @@ export const homepageData = {
     //       link: "https://homerun.today/",
     //       btnText: "Visit website",
     //     },
-    //     mainImg: "/images/modal/gallery/main/item0.jpeg",
+    //     mainImg: "/images/modal/gallery/main/item0.webp",
     //     desc: {
     //       texts: [
     //         "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
@@ -385,7 +335,7 @@ export const homepageData = {
     //       [
     //         {
     //           type: "image",
-    //           src: "/images/modal/gallery/album/item0-1.jpeg",
+    //           src: "/images/modal/gallery/album/item0-1.webp",
     //         },
     //       ],
     //       [
@@ -407,13 +357,13 @@ export const homepageData = {
     //         },
     //         {
     //           type: "image",
-    //           src: "/images/modal/gallery/album/item0-5.jpeg",
+    //           src: "/images/modal/gallery/album/item0-5.webp",
     //         },
     //       ],
     //       [
     //         {
     //           type: "image",
-    //           src: "/images/modal/gallery/album/item0-6.jpeg",
+    //           src: "/images/modal/gallery/album/item0-6.webp",
     //         },
     //       ],
     //     ],
@@ -426,7 +376,7 @@ export const homepageData = {
     //       link: "https://www.youtube.com/",
     //       btnText: "Visit website",
     //     },
-    //     mainImg: "/images/modal/gallery/main/item1.jpeg",
+    //     mainImg: "/images/modal/gallery/main/item1.webp",
     //     desc: {
     //       texts: [
     //         "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
@@ -467,7 +417,7 @@ export const homepageData = {
     //       [
     //         {
     //           type: "image",
-    //           src: "/images/modal/gallery/album/item1-4.jpeg",
+    //           src: "/images/modal/gallery/album/item1-4.webp",
     //         },
     //       ],
     //       [
@@ -486,7 +436,7 @@ export const homepageData = {
     //       link: "https://homerun.today/",
     //       btnText: "Visit website",
     //     },
-    //     mainImg: "/images/modal/gallery/main/item0.jpeg",
+    //     mainImg: "/images/modal/gallery/main/item0.webp",
     //     desc: {
     //       texts: [
     //         "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
@@ -507,7 +457,7 @@ export const homepageData = {
     //       [
     //         {
     //           type: "image",
-    //           src: "/images/modal/gallery/album/item0-1.jpeg",
+    //           src: "/images/modal/gallery/album/item0-1.webp",
     //         },
     //       ],
     //       [
@@ -529,13 +479,13 @@ export const homepageData = {
     //         },
     //         {
     //           type: "image",
-    //           src: "/images/modal/gallery/album/item0-5.jpeg",
+    //           src: "/images/modal/gallery/album/item0-5.webp",
     //         },
     //       ],
     //       [
     //         {
     //           type: "image",
-    //           src: "/images/modal/gallery/album/item0-6.jpeg",
+    //           src: "/images/modal/gallery/album/item0-6.webp",
     //         },
     //       ],
     //     ],
@@ -548,7 +498,7 @@ export const homepageData = {
     //       link: "https://www.youtube.com/",
     //       btnText: "Visit website",
     //     },
-    //     mainImg: "/images/modal/gallery/main/item1.jpeg",
+    //     mainImg: "/images/modal/gallery/main/item1.webp",
     //     desc: {
     //       texts: [
     //         "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
@@ -589,7 +539,7 @@ export const homepageData = {
     //       [
     //         {
     //           type: "image",
-    //           src: "/images/modal/gallery/album/item1-4.jpeg",
+    //           src: "/images/modal/gallery/album/item1-4.webp",
     //         },
     //       ],
     //       [
@@ -608,7 +558,7 @@ export const homepageData = {
     //       link: "https://homerun.today/",
     //       btnText: "Visit website",
     //     },
-    //     mainImg: "/images/modal/gallery/main/item0.jpeg",
+    //     mainImg: "/images/modal/gallery/main/item0.webp",
     //     desc: {
     //       texts: [
     //         "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
@@ -629,7 +579,7 @@ export const homepageData = {
     //       [
     //         {
     //           type: "image",
-    //           src: "/images/modal/gallery/album/item0-1.jpeg",
+    //           src: "/images/modal/gallery/album/item0-1.webp",
     //         },
     //       ],
     //       [
@@ -651,13 +601,13 @@ export const homepageData = {
     //         },
     //         {
     //           type: "image",
-    //           src: "/images/modal/gallery/album/item0-5.jpeg",
+    //           src: "/images/modal/gallery/album/item0-5.webp",
     //         },
     //       ],
     //       [
     //         {
     //           type: "image",
-    //           src: "/images/modal/gallery/album/item0-6.jpeg",
+    //           src: "/images/modal/gallery/album/item0-6.webp",
     //         },
     //       ],
     //     ],
@@ -670,7 +620,7 @@ export const homepageData = {
     //       link: "https://www.youtube.com/",
     //       btnText: "Visit website",
     //     },
-    //     mainImg: "/images/modal/gallery/main/item1.jpeg",
+    //     mainImg: "/images/modal/gallery/main/item1.webp",
     //     desc: {
     //       texts: [
     //         "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
@@ -711,7 +661,7 @@ export const homepageData = {
     //       [
     //         {
     //           type: "image",
-    //           src: "/images/modal/gallery/album/item1-4.jpeg",
+    //           src: "/images/modal/gallery/album/item1-4.webp",
     //         },
     //       ],
     //       [
@@ -730,7 +680,7 @@ export const homepageData = {
     //       link: "https://homerun.today/",
     //       btnText: "Visit website",
     //     },
-    //     mainImg: "/images/modal/gallery/main/item0.jpeg",
+    //     mainImg: "/images/modal/gallery/main/item0.webp",
     //     desc: {
     //       texts: [
     //         "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
@@ -751,7 +701,7 @@ export const homepageData = {
     //       [
     //         {
     //           type: "image",
-    //           src: "/images/modal/gallery/album/item0-1.jpeg",
+    //           src: "/images/modal/gallery/album/item0-1.webp",
     //         },
     //       ],
     //       [
@@ -773,13 +723,13 @@ export const homepageData = {
     //         },
     //         {
     //           type: "image",
-    //           src: "/images/modal/gallery/album/item0-5.jpeg",
+    //           src: "/images/modal/gallery/album/item0-5.webp",
     //         },
     //       ],
     //       [
     //         {
     //           type: "image",
-    //           src: "/images/modal/gallery/album/item0-6.jpeg",
+    //           src: "/images/modal/gallery/album/item0-6.webp",
     //         },
     //       ],
     //     ],

@@ -244,7 +244,7 @@ const ExpertiseSection = ({ data }) => {
   return (
     <section
       ref={sectionExpertiseRef}
-      className=" section-expertise cursor-default md:py-[10vh] md:pl-[8.4vw]  md:mt-0 md:mb-0 mb-[35vw] mt-[8vw] md:w-full h-auto "
+      className=" section-expertise cursor-default md:py-[10vh] pt-[15vh] md:pl-[8.4vw]  md:mt-0 md:mb-0 mb-[35vw] mt-[8vw] md:w-full h-auto "
     >
       <div
         ref={expertiseRef}

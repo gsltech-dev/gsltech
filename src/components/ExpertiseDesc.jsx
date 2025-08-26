@@ -56,6 +56,9 @@ const ExpertiseDesc = ({
         });
         tlRef.current = createTl;
 
+        // ✔ runId는 루프 밖에서 한번만 증가
+        const runId = ++runIdRef.current;
+
         Array.from(wordWrapper).forEach((word) => {
           const spans = word.querySelectorAll("span");
 
@@ -64,9 +67,6 @@ const ExpertiseDesc = ({
           const changeInterval = 50; //글자 하나하나 바뀌는 시간 ms
           const animationTime = 500; //글자 바뀌는게 보이는 시간 ms
           const charset = `ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789`;
-
-          // ✔ runId는 루프 밖에서 한번만 증가
-          const runId = ++runIdRef.current;
 
           // function changeText(span) {
           //   span.textContent =
@@ -166,6 +166,9 @@ const ExpertiseDesc = ({
         });
         tlRef.current = createTl;
 
+        // ✔ runId는 루프 밖에서 한번만 증가
+        const runId = ++runIdRef.current;
+
         Array.from(wordWrapper).forEach((word) => {
           const spans = word.querySelectorAll("span");
           gsap.set(spans, { opacity: 0 });
@@ -175,9 +178,6 @@ const ExpertiseDesc = ({
           const changeInterval = 50; //글자 하나하나 바뀌는 시간 ms
           const animationTime = 500; //글자 바뀌는게 보이는 시간 ms
           const charset = `ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789`;
-
-          // ✔ runId는 루프 밖에서 한번만 증가
-          const runId = ++runIdRef.current;
 
           // function changeText(span) {
           //   span.textContent =

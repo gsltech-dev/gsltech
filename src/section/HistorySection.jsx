@@ -138,43 +138,48 @@ const HistorySection = ({
   return (
     <section
       ref={historySectionRef}
-      className=" w-full h-auto section-history  flex flex-col items-center justify-start md:gap-[0.8vw] gap-[2.5vw] "
+      className=" w-full h-auto section-history pt-[15vw]"
     >
-      {fourData.map((info, i) => (
-        <HistoryItem
-          setRef={(el) => {
-            itemRefs.current[i] = el;
-          }}
-          // handleClick={handleClick}
-          historyInfo={info}
-          key={`history-${i}`}
-          idx={i}
-          setIsReady={setIsReady}
-        />
-      ))}
-      {clickMore ? (
-        lastData.map((info, i) => (
+      <div className="md:text-[3.5vw] text-[6.5vw] font-normal md:mb-[3vw] mb-[3vw]">
+        Our Journey
+      </div>
+      <div className="flex flex-col items-center justify-start md:gap-[0.8vw] gap-[2.5vw]">
+        {fourData.map((info, i) => (
           <HistoryItem
+            setRef={(el) => {
+              itemRefs.current[i] = el;
+            }}
             // handleClick={handleClick}
             historyInfo={info}
-            key={`history-${i + 3}`}
-            idx={i + 4}
-            more={true}
-            isLast={lastData.length - 1 === i ? true : false}
+            key={`history-${i}`}
+            idx={i}
+            setIsReady={setIsReady}
           />
-        ))
-      ) : (
-        <button
-          ref={btnRef}
-          className="moreBtn w-full h-auto overflow-hidden relative py-[2.4vw] md:py-[1vw] hover:cursor-pointer align-middle text-[3.2vw] font-[350] md:font-[350] md:text-[1.1vw] lg:text-[1vw] md:min-w-[130px] flex justify-center items-center  lg:rounded-2xl md:rounded-lg rounded-md bg-[#efefef] "
-          onClick={() => {
-            setClickMore(true);
-          }}
-        >
-          <p className="btn-text z-20">More Projects</p>
-          <div className="hover-background absolute opacity-0 bg-[#161616] left-0 bottom-0 w-full h-full"></div>
-        </button>
-      )}
+        ))}
+        {clickMore ? (
+          lastData.map((info, i) => (
+            <HistoryItem
+              // handleClick={handleClick}
+              historyInfo={info}
+              key={`history-${i + 3}`}
+              idx={i + 4}
+              more={true}
+              isLast={lastData.length - 1 === i ? true : false}
+            />
+          ))
+        ) : (
+          <button
+            ref={btnRef}
+            className="moreBtn w-full h-auto overflow-hidden relative py-[2.4vw] md:py-[1vw] hover:cursor-pointer align-middle text-[3.2vw] font-[350] md:font-[350] md:text-[1.1vw] lg:text-[1vw] md:min-w-[130px] flex justify-center items-center  lg:rounded-2xl md:rounded-lg rounded-md bg-[#efefef] "
+            onClick={() => {
+              setClickMore(true);
+            }}
+          >
+            <p className="btn-text z-20">More Projects</p>
+            <div className="hover-background absolute opacity-0 bg-[#161616] left-0 bottom-0 w-full h-full"></div>
+          </button>
+        )}
+      </div>
     </section>
   );
 };

@@ -46,76 +46,36 @@ export const homepageData = {
   historySection: [
     //순서대로 화면에 적용
     {
-      year: 2024.07,
-      title: "GSLTECH 창립",
-      mainImage: "/images/history/history-item1-main.jpeg",
-      hoverImage: [
-        "/images/history/history-item1-hover1.jpeg",
-        "/images/history/history-item1-hover2.jpeg",
-      ],
-    },
-    {
-      year: 2024.08,
-      title: "저주파 미용기기 베타테스팅 시작",
-      mainImage: "/images/history/history-item2-main.jpeg",
-      hoverImage: [
-        "/images/history/history-item2-hover1.jpeg",
-        "/images/history/history-item2-hover2.jpeg",
-      ],
-    },
-    {
-      year: 2024.11,
-      title: "(주)에이치피이앤씨 건설 웹사이트 제작",
-      mainImage: "/images/history/history-item3-main.jpeg",
-      hoverImage: [
-        "/images/history/history-item3-hover1.jpeg",
-        "/images/history/history-item3-hover2.jpeg",
-      ],
-    },
-    {
-      year: 2024.12,
-      title: "제품 회원 관리 프로그램 제작",
-      mainImage: "/images/history/history-item4-main.jpeg",
-      hoverImage: [
-        "/images/history/history-item4-hover1.jpeg",
-        "/images/history/history-item4-hover2.jpeg",
-      ],
-    },
-    {
-      year: 2025.01,
-      title: "평택 공장 오픈",
-      mainImage: "/images/history/history-item4-main.jpeg",
-      hoverImage: [
-        "/images/history/history-item4-hover1.jpeg",
-        "/images/history/history-item4-hover2.jpeg",
-      ],
-    },
-    {
-      year: 2025.04,
-      title: "하남 공장 오픈",
-      mainImage: "/images/history/history-item4-main.jpeg",
-      hoverImage: [
-        "/images/history/history-item4-hover1.jpeg",
-        "/images/history/history-item4-hover2.jpeg",
-      ],
+      year: 2025.07,
+      title: "온천수 공급  MOU 계약 체결",
     },
     {
       year: 2025.05,
       title: "저주파 미용기기 독점 개발 착수",
-      mainImage: "/images/history/history-item4-main.jpeg",
-      hoverImage: [
-        "/images/history/history-item4-hover1.jpeg",
-        "/images/history/history-item4-hover2.jpeg",
-      ],
     },
     {
-      year: 2025.07,
-      title: "온천수 공급  MOU 계약 체결",
-      mainImage: "/images/history/history-item4-main.jpeg",
-      hoverImage: [
-        "/images/history/history-item4-hover1.jpeg",
-        "/images/history/history-item4-hover2.jpeg",
-      ],
+      year: 2025.04,
+      title: "하남 공장 오픈",
+    },
+    {
+      year: 2025.01,
+      title: "평택 공장 오픈",
+    },
+    {
+      year: 2024.12,
+      title: "제품 회원 관리 프로그램 제작",
+    },
+    {
+      year: 2024.11,
+      title: "(주)에이치피이앤씨 건설 웹사이트 제작",
+    },
+    {
+      year: 2024.08,
+      title: "저주파 미용기기 베타테스팅 시작",
+    },
+    {
+      year: 2024.07,
+      title: "GSLTECH 창립",
     },
   ],
   expertiseSection: {

@@ -35,34 +35,36 @@ const HistoryItem = ({
       }
       const texts = el.querySelectorAll(".history-text");
       const hoverBackground = el.querySelector(".hover-background");
-      const btnGo = el.querySelector(".btn-go");
-      const fisrtArrow = el.querySelector(".history-arrow-fisrt");
-      const secondArrow = el.querySelector(".history-arrow-second");
-      const mainImage = el.querySelector(".main-image");
-      const hoverImage1 = el.querySelector(".hover-image-1");
-      const hoverImage2 = el.querySelector(".hover-image-2");
-      const getBtnGoWidth = () => {
-        return btnGo.offsetWidth;
-      };
-      const getMainImageWidth = () => {
-        return mainImage.offsetWidth;
-      };
 
-      const getVh = (num = 1) => {
-        return (window.innerWidth / 100) * num;
-      };
+      //디자인 팀 요청으로 인한 이미지, 애로우 애니매이션 삭제로 인한 el 요소 지정 주석 처리
+      // const mainImage = el.querySelector(".main-image");
+      // const btnGo = el.querySelector(".btn-go");
+      // const fisrtArrow = el.querySelector(".history-arrow-fisrt");
+      // const secondArrow = el.querySelector(".history-arrow-second");
+      // const hoverImage1 = el.querySelector(".hover-image-1");
+      // const hoverImage2 = el.querySelector(".hover-image-2");
+      // const getBtnGoWidth = () => {
+      //   return btnGo.offsetWidth;
+      // };
+      // const getMainImageWidth = () => {
+      //   return mainImage.offsetWidth;
+      // };
 
-      //arrow 이동기
-      const moveArrow = (arrow, from, to) => {
-        gsap.fromTo(
-          arrow,
-          { x: from },
-          {
-            x: to,
-            duration: 0.2,
-          }
-        );
-      };
+      // const getVh = (num = 1) => {
+      //   return (window.innerWidth / 100) * num;
+      // };
+
+      // // arrow 이동기
+      // const moveArrow = (arrow, from, to) => {
+      //   gsap.fromTo(
+      //     arrow,
+      //     { x: from },
+      //     {
+      //       x: to,
+      //       duration: 0.2,
+      //     }
+      //   );
+      // };
 
       const onEnter = () => {
         gsap
@@ -85,56 +87,58 @@ const HistoryItem = ({
             "<"
           );
 
-        let w = getBtnGoWidth();
-        moveArrow(fisrtArrow, -w, 0);
-        moveArrow(secondArrow, 0, w);
+        //arrow 애니매이션
+        // let w = getBtnGoWidth();
+        // moveArrow(fisrtArrow, -w, 0);
+        // moveArrow(secondArrow, 0, w);
 
-        let imageW = getMainImageWidth();
-        let imageGapW = getVh(0.6);
+        // 이미지 애니매이션
+        // let imageW = getMainImageWidth();
+        // let imageGapW = getVh(0.6);
 
-        gsap
-          .timeline()
-          .fromTo(
-            hoverImage1,
-            { rotateZ: 10 },
-            {
-              rotateZ: 0,
-              x: -1 * (imageW * 1 + imageGapW * 1),
-              duration: 0.3,
-            }
-          )
-          .fromTo(
-            hoverImage1,
-            {
-              opacity: 0,
-            },
-            {
-              opacity: 1,
-              duration: 0.1,
-            },
-            "<"
-          )
-          .fromTo(
-            hoverImage2,
-            { rotateZ: 10 },
-            {
-              rotateZ: 0,
-              x: -1 * (imageW * 2 + imageGapW * 2),
-              duration: 0.3,
-            },
-            "<"
-          )
-          .fromTo(
-            hoverImage2,
-            {
-              opacity: 0,
-            },
-            {
-              opacity: 1,
-              duration: 0.1,
-            },
-            "<"
-          );
+        // gsap
+        //   .timeline()
+        //   .fromTo(
+        //     hoverImage1,
+        //     { rotateZ: 10 },
+        //     {
+        //       rotateZ: 0,
+        //       x: -1 * (imageW * 1 + imageGapW * 1),
+        //       duration: 0.3,
+        //     }
+        //   )
+        //   .fromTo(
+        //     hoverImage1,
+        //     {
+        //       opacity: 0,
+        //     },
+        //     {
+        //       opacity: 1,
+        //       duration: 0.1,
+        //     },
+        //     "<"
+        //   )
+        //   .fromTo(
+        //     hoverImage2,
+        //     { rotateZ: 10 },
+        //     {
+        //       rotateZ: 0,
+        //       x: -1 * (imageW * 2 + imageGapW * 2),
+        //       duration: 0.3,
+        //     },
+        //     "<"
+        //   )
+        //   .fromTo(
+        //     hoverImage2,
+        //     {
+        //       opacity: 0,
+        //     },
+        //     {
+        //       opacity: 1,
+        //       duration: 0.1,
+        //     },
+        //     "<"
+        //   );
       };
 
       const onLeave = () => {
@@ -157,30 +161,32 @@ const HistoryItem = ({
             "<"
           );
 
-        let w = getBtnGoWidth();
-        moveArrow(fisrtArrow, 0, -w);
-        moveArrow(secondArrow, w, 0);
+        //arrow 애니매이션
+        // let w = getBtnGoWidth();
+        // moveArrow(fisrtArrow, 0, -w);
+        // moveArrow(secondArrow, w, 0);
 
-        gsap
-          .timeline()
-          .to(hoverImage1, { x: 0, duration: 0.3, rotateZ: 10 })
-          .to(
-            hoverImage1,
-            {
-              opacity: 0,
-              duration: 0.4,
-            },
-            "<"
-          )
-          .to(hoverImage2, { x: 0, duration: 0.3, rotateZ: 10 }, "<")
-          .to(
-            hoverImage2,
-            {
-              opacity: 0,
-              duration: 0.3,
-            },
-            "<"
-          );
+        //이미지 애니매이션
+        // gsap
+        //   .timeline()
+        //   .to(hoverImage1, { x: 0, duration: 0.3, rotateZ: 10 })
+        //   .to(
+        //     hoverImage1,
+        //     {
+        //       opacity: 0,
+        //       duration: 0.4,
+        //     },
+        //     "<"
+        //   )
+        //   .to(hoverImage2, { x: 0, duration: 0.3, rotateZ: 10 }, "<")
+        //   .to(
+        //     hoverImage2,
+        //     {
+        //       opacity: 0,
+        //       duration: 0.3,
+        //     },
+        //     "<"
+        //   );
       };
 
       const mm = gsap.matchMedia(); // matchMedia
@@ -236,7 +242,7 @@ const HistoryItem = ({
     <div
       key={`history${idx}`}
       ref={historyRef}
-      className="history-item relative flex justify-center items-center w-full md:aspect-[1/0.073] overflow-hidden aspect-[1/0.17] bg-[#efefef] lg:rounded-2xl md:rounded-lg rounded-md"
+      className="history-item relative flex justify-end pr-[3vw] items-center w-full md:aspect-[1/0.073] overflow-hidden aspect-[1/0.17] lg:rounded-2xl md:rounded-lg rounded-md"
       onClick={() => {
         handleClick(idx);
       }}
@@ -247,11 +253,11 @@ const HistoryItem = ({
         {year}
       </div>
       {/* title */}
-      <div className="flex h-full history-text align-middle text-[3.6vw] min-w-[80px] font-[350] md:font-[350] md:text-[1.4vw] md:min-w-[130px] md:pl-[1%]  w-auto items-center history-title z-20">
+      <div className="flex h-full history-text align-middle text-[3.6vw] min-w-[80px] font-[350] md:font-[350] md:text-[1.4vw] md:min-w-1/4 md:pl-[1%]  w-auto items-center history-title z-20">
         {title}
       </div>
       {/* images */}
-      <div className="flex relative h-full grow-1 items-center justify-end mr-[0.5%] history-img z-20">
+      {/* <div className="flex relative h-full grow-1 items-center justify-end mr-[0.5%] history-img z-20">
         <div className="history-img-wrapper absolute hover-image-1 md:flex hidden items-center lg:rounded-2xl md:rounded-lg h-2/3 md:h-5/7 rounded-md overflow-hidden   w-3/7  md:w-1/9">
           <img
             src={hoverImage[0]}
@@ -276,9 +282,9 @@ const HistoryItem = ({
             loading="lazy"
           />
         </div>
-      </div>
+      </div> */}
       {/* btn */}
-      <div className="flex h-full w-2/11 md:w-1/12 justify-center items-center history-btn z-20">
+      {/* <div className="flex h-full w-2/11 md:w-1/12 justify-center items-center history-btn z-20">
         <div className="btn-go flex w-6/11 md:w-6/11 aspect-square items-center relative overflow-hidden justify-center bg-[#FFFFFF] rounded-full">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -309,7 +315,7 @@ const HistoryItem = ({
             />
           </svg>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

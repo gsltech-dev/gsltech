@@ -42,20 +42,6 @@ export const homepageData = {
         video: "/videos/gallery/gallery-ITdevelop.mp4",
       },
     ],
-    [
-      {
-        title: "HPENC",
-        sub: ["Website", "Homepage"],
-        image: "/images/gallery/gallery-ITdevelop.webp",
-        video: "/videos/gallery/gallery-ITdevelop.mp4",
-      },
-      {
-        title: "MELO CRM",
-        sub: ["Website", "CRM", "Management"],
-        image: "/images/gallery/gallery-ITdevelop.webp",
-        video: "/videos/gallery/gallery-ITdevelop.mp4",
-      },
-    ],
   ],
   historySection: [
     //순서대로 화면에 적용
@@ -98,7 +84,7 @@ export const homepageData = {
       "QUALITY",
       "SOLUTION",
       "EXPERIENCE",
-      "SOCIAL VALUE",
+      "SOCIALVALUE",
       "INTEGRATION",
       "INNOVATION",
     ],
@@ -131,8 +117,8 @@ export const homepageData = {
         "COMPLIANCE",
         "RELIABILITY",
       ],
-      ["PRODUCTION", "PRECISION", "EFFICIENCY", "ASSEMBLY", "SUPPLY CHAIN"],
-      ["UX/UI", "BRADN IDENTITY", "RESPONSIVE", "DESIGN", "DIGITAL PLATFORM"],
+      ["PRODUCTION", "PRECISION", "EFFICIENCY", "ASSEMBLY", "CHAIN"],
+      ["UX/UI", "BRADN", "RESPONSIVE", "DESIGN", "DIGITAL"],
       [
         "SOFTWARE",
         "DASHBOARD",
@@ -177,17 +163,34 @@ export const homepageData = {
           //btnText : null 로 할 경우 btn 영역 삭제
           types: ["Healthcare brand"],
           title: "KOREREN",
-          link: "https://homerun.today/",
-          btnText: "Visit website",
+          // link: "https://homerun.today/",
+          btnText: null,
         },
         mainImg: "/images/modal/gallery/main/modal-main-koreren.webp",
         desc: {
-          texts: [
-            "모든 웰니스의 시작점인 중심(core)을 다시 세우기 위해, 헬스케어 브랜드 KOREREN을 선보입니다. ",
-            "한국의 기술력으로 완성된 KOREREN 제품들은 신체의 긴장을 완화하고 내면의 에너지를 회복시켜",
-            "몸의 자연스러운 리듬과 균형을 되찾는 근본적인 솔루션을 제공합니다.",
-            "현재 KOREREN의 철학을 담은 디퍼웨이브를 시작으로 더 다양한 웰니스 솔루션을 선보일 것입니다.",
-          ],
+          texts: {
+            pc: [
+              "모든 웰니스의 시작점인 중심(core)을 다시 세우기 위해, 헬스케어 브랜드 KOREREN을 선보입니다. ",
+              "한국의 기술력으로 완성된 KOREREN 제품들은 신체의 긴장을 완화하고 내면의 에너지를 회복시켜",
+              "몸의 자연스러운 리듬과 균형을 되찾는 근본적인 솔루션을 제공합니다.",
+              " ",
+              "현재 KOREREN의 철학을 담은 디퍼웨이브를 시작으로 더 다양한 웰니스 솔루션을 선보일 것입니다.",
+            ],
+            mobile: [
+              "모든 웰니스의 시작점인 중심(core)을",
+              "다시 세우기 위해, 헬스케어 브랜드",
+              "KOREREN을 선보입니다. ",
+              " ",
+              "한국의 기술력으로 완성된 KOREREN 제품들은",
+              "신체의 긴장을 완화하고 내면의 에너지를 회복시켜",
+              "몸의 자연스러운 리듬과 균형을 되찾는",
+              "근본적인 솔루션을 제공합니다.",
+              " ",
+              "현재 KOREREN의 철학을 담은",
+              "디퍼웨이브를 시작으로 더 다양한",
+              "웰니스 솔루션을 선보일 것입니다.",
+            ],
+          },
           points: [
             "#회복",
             "#균형",
@@ -231,17 +234,32 @@ export const homepageData = {
           //btnText : null 로 할 경우 btn 영역 삭제
           types: ["Cosmetic brand"],
           title: "COSMETICS",
-          link: "https://www.youtube.com/",
-          btnText: "Visit website",
+          // link: "https://www.youtube.com/",
+          btnText: null,
         },
         mainImg: "/images/modal/gallery/main/modal-main-cosmetic.webp",
         desc: {
-          texts: [
-            "자연이 주는 순수한 에너지를 피부에 온전히 전달하기 위해, 새로운 뷰티 솔루션을 연구합니다. ",
-            "미네랄이 풍부한 온천수와 검증된 천연 성분을 바탕으로 비누부터 스킨케어, 화장품 까지",
-            "피부에 가장 이상적인 제품 라인업을 개발하고 있습니다.",
-            "자연과 기술이 만나 탄생한 차별화된 효능으로, 피부 본연의 건강함을 되찾는 경험을 약속합니다.",
-          ],
+          texts: {
+            pc: [
+              "자연이 주는 순수한 에너지를 피부에 온전히 전달하기 위해, 새로운 뷰티 솔루션을 연구합니다. ",
+              "미네랄이 풍부한 온천수와 검증된 천연 성분을 바탕으로 비누부터 스킨케어, 화장품 까지",
+              "피부에 가장 이상적인 제품 라인업을 개발하고 있습니다.",
+              "자연과 기술이 만나 탄생한 차별화된 효능으로, 피부 본연의 건강함을 되찾는 경험을 약속합니다.",
+            ],
+            mobile: [
+              "자연이 주는 순수한 에너지를",
+              "피부에 온전히 전달하기 위해,",
+              "새로운 뷰티 솔루션을 연구합니다. ",
+              " ",
+              "미네랄이 풍부한 온천수와",
+              "검증된 천연 성분을 바탕으로",
+              "비누부터 스킨케어, 화장품 까지",
+              " ",
+              "피부에 가장 이상적인 제품 라인업을 개발하고 있습니다.",
+              "자연과 기술이 만나 탄생한 차별화된 효능으로,",
+              "피부 본연의 건강함을 되찾는 경험을 약속합니다.",
+            ],
+          },
           points: ["#온천수", "#자연유래", "#미네랄", "#더마솔루션"],
         },
         album: [
@@ -275,17 +293,30 @@ export const homepageData = {
           //btnText : null 로 할 경우 btn 영역 삭제
           types: ["Website", "CRM"],
           title: "IT Devlopment",
-          link: "https://homerun.today/",
-          btnText: "Visit website",
+          // link: "https://homerun.today/",
+          btnText: null,
         },
         mainImg: "/images/modal/gallery/main/modal-main-ITdevelop.webp",
         desc: {
-          texts: [
-            "GSLTECH의 IT개발팀은 브랜드와 비즈니스 운영에 필요한 핵심 디지털 솔루션을 직접 개발합니다",
-            "현재 브랜드 웹사이트와 효율적인 운영을 위한 관리 프로그램을 제작하고 있으며,",
-            "파트너사의 요청에 따른 맞춤형 솔루션 개발도 지원합니다.",
-            "향후 디바이스와 연동되는 모바일 앱까지 사업영역을 확장할 수 있는 잠재력을 보유하고 있습니다.",
-          ],
+          texts: {
+            pc: [
+              "GSLTECH의 IT개발팀은 브랜드와 비즈니스 운영에 필요한 핵심 디지털 솔루션을 직접 개발합니다",
+              "현재 브랜드 웹사이트와 효율적인 운영을 위한 관리 프로그램을 제작하고 있으며,",
+              "파트너사의 요청에 따른 맞춤형 솔루션 개발도 지원합니다.",
+              "향후 디바이스와 연동되는 모바일 앱까지 사업영역을 확장할 수 있는 잠재력을 보유하고 있습니다.",
+            ],
+            mobile: [
+              "GSLTECH의 IT개발팀은 브랜드와 비즈니스 운영에",
+              "필요한 핵심 디지털 솔루션을 직접 개발합니다",
+              " ",
+              "현재 브랜드 웹사이트와 효율적인 운영을 위한",
+              "관리 프로그램을 제작하고 있으며,",
+              "파트너사의 요청에 따른 맞춤형 솔루션 개발도 지원합니다.",
+              " ",
+              "향후 디바이스와 연동되는 모바일 앱까지",
+              "사업영역을 확장할 수 있는 잠재력을 보유하고 있습니다.",
+            ],
+          },
           points: ["#정보", "#소프트웨어", "#디지털", "#관리"],
         },
         album: [
@@ -305,435 +336,5 @@ export const homepageData = {
         ],
       },
     ],
-    // history: [
-    //   {
-    //     info: {
-    //       //btnText : null 로 할 경우 btn 영역 삭제
-    //       types: ["3D", "WEBSITE"],
-    //       title: "HOMERUN",
-    //       link: "https://homerun.today/",
-    //       btnText: "Visit website",
-    //     },
-    //     mainImg: "/images/modal/gallery/main/item0.webp",
-    //     desc: {
-    //       texts: [
-    //         "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
-    //         "Voluptas perferendis fugit cumque corrupti? Voluptatum facere obcaecati odio itaque repellendus eius praesentium beatae!",
-    //       ],
-    //       points: [
-    //         { title: "ROLE", text: "UX-UI / 3D / Development" },
-    //         {
-    //           title: "AWARDS",
-    //           text: "SOTD AWWWARDS - FWA - CSS DESIGN - GSAP",
-    //         },
-    //         { title: "SOLUTIONS", text: "stroyblock / Netilfy / spline" },
-    //         { title: "PROJECT DURATION", text: "2 months" },
-    //       ],
-    //     },
-    //     album: [
-    //       //type은 꼭 image와 video 로 구분
-    //       [
-    //         {
-    //           type: "image",
-    //           src: "/images/modal/gallery/album/item0-1.webp",
-    //         },
-    //       ],
-    //       [
-    //         {
-    //           type: "video",
-    //           src: "/videos/modal/gallery/album/item0-2.mp4",
-    //         },
-    //       ],
-    //       [
-    //         {
-    //           type: "video",
-    //           src: "/videos/modal/gallery/album/item0-3.mp4",
-    //         },
-    //       ],
-    //       [
-    //         {
-    //           type: "video",
-    //           src: "/videos/modal/gallery/album/item0-4.mp4",
-    //         },
-    //         {
-    //           type: "image",
-    //           src: "/images/modal/gallery/album/item0-5.webp",
-    //         },
-    //       ],
-    //       [
-    //         {
-    //           type: "image",
-    //           src: "/images/modal/gallery/album/item0-6.webp",
-    //         },
-    //       ],
-    //     ],
-    //   },
-    //   {
-    //     info: {
-    //       //btnText : null 로 할 경우 btn 영역 삭제
-    //       types: ["BRANDING", "WEBSITE"],
-    //       title: "Boa Concept",
-    //       link: "https://www.youtube.com/",
-    //       btnText: "Visit website",
-    //     },
-    //     mainImg: "/images/modal/gallery/main/item1.webp",
-    //     desc: {
-    //       texts: [
-    //         "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
-    //         "Voluptas perferendis fugit cumque corrupti? Voluptatum facere",
-    //         " obcaecati odio itaque repellendus eius praesentium beatae!",
-    //       ],
-    //       points: [
-    //         {
-    //           title: "ROLE",
-    //           text: "Art Direction / UX-UI / Copywriting/ Development",
-    //         },
-    //         { title: "SOLUTIONS", text: "stroyblock / Netilfy / spline" },
-    //         {
-    //           title: "CREDITS",
-    //           text: "In partnership with Sapag",
-    //         },
-    //         { title: "PROJECT DURATION", text: "6 months" },
-    //       ],
-    //     },
-    //     album: [
-    //       //type은 꼭 image와 video 로 구분
-    //       [
-    //         {
-    //           type: "video",
-    //           src: "/videos/modal/gallery/album/item1-1.mp4",
-    //         },
-    //       ],
-    //       [
-    //         {
-    //           type: "video",
-    //           src: "/videos/modal/gallery/album/item1-2.mp4",
-    //         },
-    //         {
-    //           type: "video",
-    //           src: "/videos/modal/gallery/album/item1-3.mp4",
-    //         },
-    //       ],
-    //       [
-    //         {
-    //           type: "image",
-    //           src: "/images/modal/gallery/album/item1-4.webp",
-    //         },
-    //       ],
-    //       [
-    //         {
-    //           type: "video",
-    //           src: "/videos/modal/gallery/album/item1-5.mp4",
-    //         },
-    //       ],
-    //     ],
-    //   },
-    //   {
-    //     info: {
-    //       //btnText : null 로 할 경우 btn 영역 삭제
-    //       types: ["3D", "WEBSITE"],
-    //       title: "HOMERUN",
-    //       link: "https://homerun.today/",
-    //       btnText: "Visit website",
-    //     },
-    //     mainImg: "/images/modal/gallery/main/item0.webp",
-    //     desc: {
-    //       texts: [
-    //         "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
-    //         "Voluptas perferendis fugit cumque corrupti? Voluptatum facere obcaecati odio itaque repellendus eius praesentium beatae!",
-    //       ],
-    //       points: [
-    //         { title: "ROLE", text: "UX-UI / 3D / Development" },
-    //         {
-    //           title: "AWARDS",
-    //           text: "SOTD AWWWARDS - FWA - CSS DESIGN - GSAP",
-    //         },
-    //         { title: "SOLUTIONS", text: "stroyblock / Netilfy / spline" },
-    //         { title: "PROJECT DURATION", text: "2 months" },
-    //       ],
-    //     },
-    //     album: [
-    //       //type은 꼭 image와 video 로 구분
-    //       [
-    //         {
-    //           type: "image",
-    //           src: "/images/modal/gallery/album/item0-1.webp",
-    //         },
-    //       ],
-    //       [
-    //         {
-    //           type: "video",
-    //           src: "/videos/modal/gallery/album/item0-2.mp4",
-    //         },
-    //       ],
-    //       [
-    //         {
-    //           type: "video",
-    //           src: "/videos/modal/gallery/album/item0-3.mp4",
-    //         },
-    //       ],
-    //       [
-    //         {
-    //           type: "video",
-    //           src: "/videos/modal/gallery/album/item0-4.mp4",
-    //         },
-    //         {
-    //           type: "image",
-    //           src: "/images/modal/gallery/album/item0-5.webp",
-    //         },
-    //       ],
-    //       [
-    //         {
-    //           type: "image",
-    //           src: "/images/modal/gallery/album/item0-6.webp",
-    //         },
-    //       ],
-    //     ],
-    //   },
-    //   {
-    //     info: {
-    //       //btnText : null 로 할 경우 btn 영역 삭제
-    //       types: ["BRANDING", "WEBSITE"],
-    //       title: "Boa Concept",
-    //       link: "https://www.youtube.com/",
-    //       btnText: "Visit website",
-    //     },
-    //     mainImg: "/images/modal/gallery/main/item1.webp",
-    //     desc: {
-    //       texts: [
-    //         "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
-    //         "Voluptas perferendis fugit cumque corrupti? Voluptatum facere",
-    //         " obcaecati odio itaque repellendus eius praesentium beatae!",
-    //       ],
-    //       points: [
-    //         {
-    //           title: "ROLE",
-    //           text: "Art Direction / UX-UI / Copywriting/ Development",
-    //         },
-    //         { title: "SOLUTIONS", text: "stroyblock / Netilfy / spline" },
-    //         {
-    //           title: "CREDITS",
-    //           text: "In partnership with Sapag",
-    //         },
-    //         { title: "PROJECT DURATION", text: "6 months" },
-    //       ],
-    //     },
-    //     album: [
-    //       //type은 꼭 image와 video 로 구분
-    //       [
-    //         {
-    //           type: "video",
-    //           src: "/videos/modal/gallery/album/item1-1.mp4",
-    //         },
-    //       ],
-    //       [
-    //         {
-    //           type: "video",
-    //           src: "/videos/modal/gallery/album/item1-2.mp4",
-    //         },
-    //         {
-    //           type: "video",
-    //           src: "/videos/modal/gallery/album/item1-3.mp4",
-    //         },
-    //       ],
-    //       [
-    //         {
-    //           type: "image",
-    //           src: "/images/modal/gallery/album/item1-4.webp",
-    //         },
-    //       ],
-    //       [
-    //         {
-    //           type: "video",
-    //           src: "/videos/modal/gallery/album/item1-5.mp4",
-    //         },
-    //       ],
-    //     ],
-    //   },
-    //   {
-    //     info: {
-    //       //btnText : null 로 할 경우 btn 영역 삭제
-    //       types: ["3D", "WEBSITE"],
-    //       title: "HOMERUN",
-    //       link: "https://homerun.today/",
-    //       btnText: "Visit website",
-    //     },
-    //     mainImg: "/images/modal/gallery/main/item0.webp",
-    //     desc: {
-    //       texts: [
-    //         "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
-    //         "Voluptas perferendis fugit cumque corrupti? Voluptatum facere obcaecati odio itaque repellendus eius praesentium beatae!",
-    //       ],
-    //       points: [
-    //         { title: "ROLE", text: "UX-UI / 3D / Development" },
-    //         {
-    //           title: "AWARDS",
-    //           text: "SOTD AWWWARDS - FWA - CSS DESIGN - GSAP",
-    //         },
-    //         { title: "SOLUTIONS", text: "stroyblock / Netilfy / spline" },
-    //         { title: "PROJECT DURATION", text: "2 months" },
-    //       ],
-    //     },
-    //     album: [
-    //       //type은 꼭 image와 video 로 구분
-    //       [
-    //         {
-    //           type: "image",
-    //           src: "/images/modal/gallery/album/item0-1.webp",
-    //         },
-    //       ],
-    //       [
-    //         {
-    //           type: "video",
-    //           src: "/videos/modal/gallery/album/item0-2.mp4",
-    //         },
-    //       ],
-    //       [
-    //         {
-    //           type: "video",
-    //           src: "/videos/modal/gallery/album/item0-3.mp4",
-    //         },
-    //       ],
-    //       [
-    //         {
-    //           type: "video",
-    //           src: "/videos/modal/gallery/album/item0-4.mp4",
-    //         },
-    //         {
-    //           type: "image",
-    //           src: "/images/modal/gallery/album/item0-5.webp",
-    //         },
-    //       ],
-    //       [
-    //         {
-    //           type: "image",
-    //           src: "/images/modal/gallery/album/item0-6.webp",
-    //         },
-    //       ],
-    //     ],
-    //   },
-    //   {
-    //     info: {
-    //       //btnText : null 로 할 경우 btn 영역 삭제
-    //       types: ["BRANDING", "WEBSITE"],
-    //       title: "Boa Concept",
-    //       link: "https://www.youtube.com/",
-    //       btnText: "Visit website",
-    //     },
-    //     mainImg: "/images/modal/gallery/main/item1.webp",
-    //     desc: {
-    //       texts: [
-    //         "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
-    //         "Voluptas perferendis fugit cumque corrupti? Voluptatum facere",
-    //         " obcaecati odio itaque repellendus eius praesentium beatae!",
-    //       ],
-    //       points: [
-    //         {
-    //           title: "ROLE",
-    //           text: "Art Direction / UX-UI / Copywriting/ Development",
-    //         },
-    //         { title: "SOLUTIONS", text: "stroyblock / Netilfy / spline" },
-    //         {
-    //           title: "CREDITS",
-    //           text: "In partnership with Sapag",
-    //         },
-    //         { title: "PROJECT DURATION", text: "6 months" },
-    //       ],
-    //     },
-    //     album: [
-    //       //type은 꼭 image와 video 로 구분
-    //       [
-    //         {
-    //           type: "video",
-    //           src: "/videos/modal/gallery/album/item1-1.mp4",
-    //         },
-    //       ],
-    //       [
-    //         {
-    //           type: "video",
-    //           src: "/videos/modal/gallery/album/item1-2.mp4",
-    //         },
-    //         {
-    //           type: "video",
-    //           src: "/videos/modal/gallery/album/item1-3.mp4",
-    //         },
-    //       ],
-    //       [
-    //         {
-    //           type: "image",
-    //           src: "/images/modal/gallery/album/item1-4.webp",
-    //         },
-    //       ],
-    //       [
-    //         {
-    //           type: "video",
-    //           src: "/videos/modal/gallery/album/item1-5.mp4",
-    //         },
-    //       ],
-    //     ],
-    //   },
-    //   {
-    //     info: {
-    //       //btnText : null 로 할 경우 btn 영역 삭제
-    //       types: ["3D", "WEBSITE"],
-    //       title: "HOMERUN",
-    //       link: "https://homerun.today/",
-    //       btnText: "Visit website",
-    //     },
-    //     mainImg: "/images/modal/gallery/main/item0.webp",
-    //     desc: {
-    //       texts: [
-    //         "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
-    //         "Voluptas perferendis fugit cumque corrupti? Voluptatum facere obcaecati odio itaque repellendus eius praesentium beatae!",
-    //       ],
-    //       points: [
-    //         { title: "ROLE", text: "UX-UI / 3D / Development" },
-    //         {
-    //           title: "AWARDS",
-    //           text: "SOTD AWWWARDS - FWA - CSS DESIGN - GSAP",
-    //         },
-    //         { title: "SOLUTIONS", text: "stroyblock / Netilfy / spline" },
-    //         { title: "PROJECT DURATION", text: "2 months" },
-    //       ],
-    //     },
-    //     album: [
-    //       //type은 꼭 image와 video 로 구분
-    //       [
-    //         {
-    //           type: "image",
-    //           src: "/images/modal/gallery/album/item0-1.webp",
-    //         },
-    //       ],
-    //       [
-    //         {
-    //           type: "video",
-    //           src: "/videos/modal/gallery/album/item0-2.mp4",
-    //         },
-    //       ],
-    //       [
-    //         {
-    //           type: "video",
-    //           src: "/videos/modal/gallery/album/item0-3.mp4",
-    //         },
-    //       ],
-    //       [
-    //         {
-    //           type: "video",
-    //           src: "/videos/modal/gallery/album/item0-4.mp4",
-    //         },
-    //         {
-    //           type: "image",
-    //           src: "/images/modal/gallery/album/item0-5.webp",
-    //         },
-    //       ],
-    //       [
-    //         {
-    //           type: "image",
-    //           src: "/images/modal/gallery/album/item0-6.webp",
-    //         },
-    //       ],
-    //     ],
-    //   },
-    // ],
   },
 };

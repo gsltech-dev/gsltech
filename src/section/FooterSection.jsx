@@ -97,7 +97,7 @@ const FooterSection = ({ data }) => {
           <div className="  info-left w-1/2 h-full ">
             <div className="email-wrapper w-full h-auto md:mb-[3vw] mb-[6vw]">
               <div className="email-text text-black font-[350] md:text-[1.3vw] md:mb-[0.5vw] mb-[1vw] text-[3.4vw]">
-                To contect
+                To contact
               </div>
               <div className="email text-[3.3vw] md:text-[1.2vw] text-[#9c9c9c] cursor-pointer">
                 {data.email}

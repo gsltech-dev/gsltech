@@ -52,7 +52,7 @@ const ExpertiseWord = ({
             {
               y: 0,
               duration: 1,
-              delay: 1.2 - outerIdx * 0.2,
+              delay: outerIdx * 0.2 + 0.1,
               ease: "power2.out",
             }
           )

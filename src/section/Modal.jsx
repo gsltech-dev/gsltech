@@ -1,9 +1,11 @@
 import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
+import useWindowSize from "../hooks/useWindowSize";
 
 const Modal = ({ onClose, modalId, data, section }) => {
   // 모달 열릴 때 스크롤 막고, 닫힐 때 복구
-
+  const w = useWindowSize();
+  const isMobile = w < 768;
   const modalData = data[section][modalId];
   const mainModalRef = useRef();
   const totalModalRef = useRef();
@@ -204,7 +206,7 @@ const Modal = ({ onClose, modalId, data, section }) => {
               viewBox="0 0 24 24"
               stroke-width="1.5"
               stroke=" currentColor "
-              class="btn-icon absolute w-[40%]"
+              className="btn-icon absolute w-[40%]"
             >
               <path
                 stroke-linecap="round"
@@ -252,7 +254,7 @@ const Modal = ({ onClose, modalId, data, section }) => {
           )}
         </div>
         {/* main-img-wrapper */}
-        <div className="main-img-wrapper w-full  aspect-square md:aspect-[1/0.45] mt-[6vw] md:mt-[1vw]  rounded-xl overflow-hidden">
+        <div className="main-img-wrapper w-full aspect-[1/0.45] md:aspect-[1/0.45] mt-[6vw] md:mt-[1vw]  rounded-xl overflow-hidden">
           <img
             loading="lazy"
             className="w-full h-full object-center object-cover"
@@ -263,11 +265,20 @@ const Modal = ({ onClose, modalId, data, section }) => {
         {/* desc-wrapper */}
         <div className="desc-wrapper flex flex-col w-full h-auto  mt-[5vw] font-normal pl-[0.5vw]">
           {/* desc-text */}
-          <div className="desc-text w-full md:w-2/3 mt-[7vw] md:mt-0 text-[4vw] leading-[6vw] md:leading-[1.9vw] md:text-[1.3vw] h-auto ">
-            {modalData.desc.texts.map((text, i) => (
-              <p key={i}>{text}</p>
-            ))}
-          </div>
+          {console.log(isMobile)}
+          {isMobile ? (
+            <div className="desc-text w-full md:w-2/3 mt-[7vw] md:mt-0 text-[4vw] leading-[6vw] md:leading-[1.9vw] md:text-[1.3vw] h-auto ">
+              {modalData.desc.texts.mobile.map((text, i) =>
+                text === " " ? <br key={i} /> : <p key={i}>{text}</p>
+              )}
+            </div>
+          ) : (
+            <div className="desc-text w-full md:w-2/3 mt-[7vw] md:mt-0 text-[4vw] leading-[6vw] md:leading-[1.9vw] md:text-[1.3vw] h-auto ">
+              {modalData.desc.texts.pc.map((text, i) =>
+                text === " " ? <br key={i} /> : <p key={i}>{text}</p>
+              )}
+            </div>
+          )}
           {/* desc-point */}
           <div className=" desc-point w-full h-auto mt-[6vw] md:mt-[4vw] flex flex-col md:gap-[0vw] gap-[1vw] items-end">
             {modalData.desc.points.map((point, i) => (
@@ -277,15 +288,6 @@ const Modal = ({ onClose, modalId, data, section }) => {
               >
                 {point}
               </div>
-
-              // <div className="point-wrapper md:w-3/5 md:h-[4vw] gap-[1vw] md:gap-0 md:px-[1vw] w-full h-auto px-[4vw] py-[6vw] md:py-0 md:rounded-lg rounded-xl flex flex-col md:flex-row justify-start md:items-center md:justify-between bg-[#efefef]">
-              //   <div className="point-title font-[400] md:text-[1.25vw] text-[4.3vw]">
-              //     {point}
-              //   </div>
-              //   <div className="point-text w-auto font-[350] md:text-[1.1vw] text-[3.4vw]">
-              //     {point}
-              //   </div>
-              // </div>
             ))}
           </div>
         </div>

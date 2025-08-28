@@ -252,7 +252,7 @@ const ExpertiseSection = ({ data }) => {
       >
         {/* title-wrapper */}
         <div
-          className="title-wrapper relative font-[350] md:w-full w-full md:auto h-full flex md:flex-col flex-col-reverse  md:justify-start "
+          className="title-wrapper relative font-[350] md:w-full w-full md:auto h-full flex md:flex-col flex-col  md:justify-start "
           style={{
             fontFamily: "Codec Pro",
             color: "#000000",

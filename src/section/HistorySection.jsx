@@ -175,7 +175,7 @@ const HistorySection = ({
               setClickMore(true);
             }}
           >
-            <p className="btn-text z-20">More Projects</p>
+            <p className="btn-text z-20">Read More</p>
             <div className="hover-background absolute opacity-0 bg-[#161616] left-0 bottom-0 w-full h-full"></div>
           </button>
         )}

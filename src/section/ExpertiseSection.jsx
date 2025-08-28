@@ -248,7 +248,7 @@ const ExpertiseSection = ({ data }) => {
     >
       <div
         ref={expertiseRef}
-        className="expertise md:py-[10vw] flex md:flex-row flex-col-reverse w-full h-auto"
+        className="expertise md:py-[10vw] flex md:flex-row flex-col w-full h-auto"
       >
         {/* title-wrapper */}
         <div
@@ -258,38 +258,10 @@ const ExpertiseSection = ({ data }) => {
             color: "#000000",
           }}
         >
-          {data.title.map((title, outerIdx) => (
-            <ExpertiseWord
-              key={outerIdx}
-              title={title}
-              totalIdx={dataLength}
-              outerIdx={outerIdx}
-              setDescTarget={setDescTarget}
-              mouseRatio={mouseRatio}
-              isExperEnter={isExperEnter}
-            />
-          ))}
-
-          {/* description-wrapper */}
-          <div className="description-wrapper md:absolute md:w-1/6 md:min-w-[170px]  w-full h-full md:right-[1vw] md:top-[0]">
-            {/* description */}
-            <div
-              className=" description text-[14px] md:text-[clamp(10px,0.9vw,16px)] font-normal left-0 md:w-full w-full md:h-auto h-[50vw] md:sticky md:top-10 "
-              style={{ fontFamily: "Fira Code" }}
-            >
-              <ExpertiseDesc
-                descriptionData={data.description}
-                defaultdescriptionData={data.default_description}
-                descTarget={descTarget}
-                isExperEnter={isExperEnter}
-              />
-            </div>
-          </div>
-
           {/* following-video-wrapper */}
           <div
             ref={videoRef}
-            className="following-video-wrappe  overflow-hidden md:w-1/5 w-5/11 rounded-3xl aspect-[1/0.7] pointer-events-none opacity-0 absolute z-50"
+            className="following-video-wrappe overflow-hidden md:w-1/5 w-5/11 rounded-3xl aspect-[1/0.7] pointer-events-none opacity-0 absolute z-50"
           >
             <div className="relative w-full h-full">
               <video
@@ -310,6 +282,34 @@ const ExpertiseSection = ({ data }) => {
               ></video>
             </div>
           </div>
+
+          {/* description-wrapper */}
+          <div className="description-wrapper md:absolute md:w-1/6 md:min-w-[170px]  w-full h-full md:right-[1vw] md:top-[0]">
+            {/* description */}
+            <div
+              className=" description text-[14px] md:text-[clamp(10px,0.9vw,16px)] font-normal left-0 md:w-full w-full md:h-auto h-[50vw] md:sticky md:top-10 "
+              style={{ fontFamily: "Fira Code" }}
+            >
+              <ExpertiseDesc
+                descriptionData={data.description}
+                defaultdescriptionData={data.default_description}
+                descTarget={descTarget}
+                isExperEnter={isExperEnter}
+              />
+            </div>
+          </div>
+
+          {data.title.map((title, outerIdx) => (
+            <ExpertiseWord
+              key={outerIdx}
+              title={title}
+              totalIdx={dataLength}
+              outerIdx={outerIdx}
+              setDescTarget={setDescTarget}
+              mouseRatio={mouseRatio}
+              isExperEnter={isExperEnter}
+            />
+          ))}
         </div>
       </div>
     </section>

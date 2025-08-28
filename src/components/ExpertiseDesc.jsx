@@ -68,13 +68,9 @@ const ExpertiseDesc = ({
           const animationTime = 500; //글자 바뀌는게 보이는 시간 ms
           const charset = `ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789`;
 
-          // function changeText(span) {
-          //   span.textContent =
-          //     charset[Math.floor(Math.random() * charset.length)];
-          // }
-
           spans.forEach((span, i) => {
-            const originText = span.textContent;
+            // const originText = span.textContent;
+            const desired = span.dataset.final; // ✅ 항상 이 값을 최종으로 복구
 
             const iid = setInterval(() => {
               if (runId !== runIdRef.current) return;
@@ -88,22 +84,11 @@ const ExpertiseDesc = ({
               clearInterval(iid);
               intervalsRef.current.delete(iid);
               if (runId === runIdRef.current) {
-                span.textContent = originText;
+                span.textContent = desired;
               }
             }, i * duration * 1000 + animationTime);
             timeoutsRef.current.add(tid);
           });
-
-          // spans.forEach((span, i) => {
-          //   const originText = span.textContent;
-          //   const intervalId = setInterval(() => {
-          //     changeText(span);
-          //   }, changeInterval);
-          //   setTimeout(() => {
-          //     clearInterval(intervalId);
-          //     span.textContent = originText;
-          //   }, i * duration * 1000 + animationTime);
-          // });
 
           createTl.fromTo(
             spans,
@@ -179,24 +164,9 @@ const ExpertiseDesc = ({
           const animationTime = 500; //글자 바뀌는게 보이는 시간 ms
           const charset = `ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789`;
 
-          // function changeText(span) {
-          //   span.textContent =
-          //     charset[Math.floor(Math.random() * charset.length)];
-          // }
-
-          // spans.forEach((span, i) => {
-          //   const originText = span.textContent;
-          //   const intervalId = setInterval(() => {
-          //     changeText(span);
-          //   }, changeInterval);
-          //   setTimeout(() => {
-          //     clearInterval(intervalId);
-          //     span.textContent = originText;
-          //   }, i * duration * 1000 + animationTime);
-          // });
-
           spans.forEach((span, i) => {
-            const originText = span.textContent;
+            // const originText = span.textContent;
+            const desired = span.dataset.final; // ✅ 항상 이 값을 최종으로 복구
 
             const iid = setInterval(() => {
               if (runId !== runIdRef.current) return;
@@ -210,7 +180,8 @@ const ExpertiseDesc = ({
               clearInterval(iid);
               intervalsRef.current.delete(iid);
               if (runId === runIdRef.current) {
-                span.textContent = originText;
+                // span.textContent = originText;
+                span.textContent = desired;
               }
             }, i * duration * 1000 + animationTime);
             timeoutsRef.current.add(tid);
@@ -296,6 +267,7 @@ const ExpertiseDesc = ({
             <span
               key={`desc-wrapper-${outerIdx}-one-word-${innerIdx}`}
               className="desc-one-word "
+              data-final={w} // ✅ 최종문자 저장
             >
               {w}
             </span>

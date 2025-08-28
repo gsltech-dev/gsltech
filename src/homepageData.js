@@ -8,12 +8,7 @@ export const homepageData = {
     ],
     introWords: {
       left: "GSLTECH",
-      right: [
-        "TECHNOLOGY",
-        "WELLNESS",
-        "QUALITY OF LIFE",
-        "누나 이거 털박에 안보이는데요?",
-      ],
+      right: ["TECHNOLOGY", "WELLNESS", "QUALITY OF LIFE", "IT development"],
     },
     introText: {
       text: "Building a healthy foundation for your daily life, with technology and empathy",

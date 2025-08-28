@@ -214,21 +214,38 @@ export const homepageData = {
         album: {
           needTap: false,
           content: {
-            default: [
-              //type은 꼭 image와 video 로 구분
-              [
-                {
-                  type: "image",
-                  src: "/images/modal/gallery/album/modal-album-koreren1.webp",
-                },
+            default: {
+              mobile: [
+                //type은 꼭 image와 video 로 구분
+                [
+                  {
+                    type: "image",
+                    src: "/images/modal/gallery/album/modal-album-koreren1.webp",
+                  },
+                ],
+                [
+                  {
+                    type: "image",
+                    src: "/images/modal/gallery/album/modal-album-koreren2.webp",
+                  },
+                ],
               ],
-              [
-                {
-                  type: "image",
-                  src: "/images/modal/gallery/album/modal-album-koreren2.webp",
-                },
+              pc: [
+                //type은 꼭 image와 video 로 구분
+                [
+                  {
+                    type: "image",
+                    src: "/images/modal/gallery/album/modal-album-koreren1.webp",
+                  },
+                ],
+                [
+                  {
+                    type: "image",
+                    src: "/images/modal/gallery/album/modal-album-koreren2.webp",
+                  },
+                ],
               ],
-            ],
+            },
           },
         },
       },
@@ -269,30 +286,56 @@ export const homepageData = {
           needTap: false,
           //type은 꼭 image와 video 로 구분
           content: {
-            default: [
-              [
-                {
-                  type: "image",
-                  src: "/images/modal/gallery/album/modal-album-cosmetic1.webp",
-                },
+            default: {
+              pc: [
+                [
+                  {
+                    type: "image",
+                    src: "/images/modal/gallery/album/modal-album-cosmetic1.webp",
+                  },
+                ],
+                [
+                  {
+                    type: "video",
+                    src: "/videos/modal/gallery/album/modal-album-cosmetic1.mp4",
+                  },
+                  {
+                    type: "video",
+                    src: "/videos/modal/gallery/album/modal-album-cosmetic2.mp4",
+                  },
+                ],
+                [
+                  {
+                    type: "image",
+                    src: "/images/modal/gallery/album/modal-album-cosmetic2.webp",
+                  },
+                ],
               ],
-              [
-                {
-                  type: "video",
-                  src: "/videos/modal/gallery/album/modal-album-cosmetic1.mp4",
-                },
-                {
-                  type: "video",
-                  src: "/videos/modal/gallery/album/modal-album-cosmetic2.mp4",
-                },
+              mobile: [
+                [
+                  {
+                    type: "image",
+                    src: "/images/modal/gallery/album/modal-album-cosmetic1.webp",
+                  },
+                ],
+                [
+                  {
+                    type: "video",
+                    src: "/videos/modal/gallery/album/modal-album-cosmetic1.mp4",
+                  },
+                  {
+                    type: "video",
+                    src: "/videos/modal/gallery/album/modal-album-cosmetic2.mp4",
+                  },
+                ],
+                [
+                  {
+                    type: "image",
+                    src: "/images/modal/gallery/album/modal-album-cosmetic2.webp",
+                  },
+                ],
               ],
-              [
-                {
-                  type: "image",
-                  src: "/images/modal/gallery/album/modal-album-cosmetic2.webp",
-                },
-              ],
-            ],
+            },
           },
         },
       },
@@ -332,23 +375,44 @@ export const homepageData = {
           needTap: true,
           taps: ["Website", "CRM"],
           content: {
-            Website: [
-              [
-                {
-                  type: "image",
-                  src: "/images/modal/gallery/album/modal-album-ITdevelop1.webp",
-                  href: "http://hpenc.com/",
-                },
+            Website: {
+              pc: [
+                [
+                  {
+                    type: "image",
+                    src: "/images/modal/gallery/album/modal-album-website1.webp",
+                    href: "http://hpenc.com/",
+                  },
+                ],
               ],
-            ],
-            CRM: [
-              [
-                {
-                  type: "image",
-                  src: "/images/modal/gallery/album/modal-album-ITdevelop2.webp",
-                },
+              mobile: [
+                [
+                  {
+                    type: "image",
+                    src: "/images/modal/gallery/album/modal-album-website1-mobile.webp",
+                    href: "http://hpenc.com/",
+                  },
+                ],
               ],
-            ],
+            },
+            CRM: {
+              pc: [
+                [
+                  {
+                    type: "image",
+                    src: "/images/modal/gallery/album/modal-album-crm1.webp",
+                  },
+                ],
+              ],
+              mobile: [
+                [
+                  {
+                    type: "image",
+                    src: "/images/modal/gallery/album/modal-album-crm1-mobile.webp",
+                  },
+                ],
+              ],
+            },
           },
         },
       },

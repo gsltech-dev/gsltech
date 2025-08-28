@@ -12,3 +12,18 @@ body {
   width: 100%;
   max-width: 100%;
 }
+
+img,
+a img {
+  -webkit-user-drag: none;
+  user-select: none;
+}
+
+a,
+a * {
+  -webkit-user-drag: none;
+}
+
+img[draggable="false"] {
+  pointer-events: auto; /* 클릭은 여전히 가능 */
+}

@@ -20,10 +20,8 @@ const Modal = ({ onClose, modalId, data, section }) => {
   const [albumKey, setAlbumKey] = useState(() => firstKey);
 
   // 3) 안전하게 콘텐츠 열기 (없으면 빈 배열)
-  const raw = modalData.album.content[albumKey];
-  console.log("hasTabs :" + hasTabs);
-  console.log("firstkey :" + firstKey);
-  console.log("albumKey:" + albumKey);
+  const raw = modalData.album.content[albumKey][isMobile ? "mobile" : "pc"];
+
   console.log(raw);
 
   const [modalY, setModalY] = useState(0); // 현재 Y 위치 상태

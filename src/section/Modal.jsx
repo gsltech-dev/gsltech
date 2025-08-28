@@ -336,13 +336,20 @@ const Modal = ({ onClose, modalId, data, section }) => {
                         href={item.href}
                         target="_blank"
                         rel="noopener noreferrer"
+                        className="relative group block w-full h-full"
                       >
                         <img
                           loading="lazy"
-                          className="img w-full h-full object-cover object-center"
+                          className="w-full h-full object-cover object-center"
                           src={item.src}
                           alt=""
                         />
+                        {/* 오버레이 */}
+                        <div className="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                          <span className="text-white font-[300] text-[5vw]">
+                            Visit Website
+                          </span>
+                        </div>
                       </a>
                     ) : (
                       <img

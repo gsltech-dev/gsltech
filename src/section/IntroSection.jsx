@@ -24,9 +24,10 @@ const IntroSection = ({ data, container, videoUrls }) => {
   const lenis = useLenis();
 
   const introTextRefs = useRef([
-    useRef(), // ENTHUSIASTIC
-    useRef(), // INGENIOUS
-    useRef(), // AGILE
+    useRef(), // first
+    useRef(), // second
+    useRef(), // third
+    useRef(), // fourth
   ]);
 
   useGSAP(

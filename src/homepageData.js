@@ -4,10 +4,16 @@ export const homepageData = {
       "videos/intro/technology.mp4",
       "videos/intro/wellness.mp4",
       "videos/intro/qualityOfLife.mp4",
+      "videos/intro/ITDevelopment.mp4",
     ],
     introWords: {
       left: "GSLTECH",
-      right: ["TECHNOLOGY", "WELLNESS", "QUALITY OF LIFE"],
+      right: [
+        "TECHNOLOGY",
+        "WELLNESS",
+        "QUALITY OF LIFE",
+        "누나 이거 털박에 안보이는데요?",
+      ],
     },
     introText: {
       text: "Building a healthy foundation for your daily life, with technology and empathy",

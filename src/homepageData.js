@@ -157,6 +157,10 @@ export const homepageData = {
   modal: {
     //gallery와 history 색션으로 구분
     //위에 작성한 각 gallery와 hisroty Section DATA의 array idx에 대응
+    //desc.texts.pc&mobile분리
+    //album은 needTap false면 content.default에 바로 채워준거 반영
+    //need Tap true면 taps : [itemName1, itemName2] 탭 배열에 분리할 이름 적어주고
+    //content 는 itemName1, itemName2를 각자 키값으로 구성해주면 됨.
     gallery: [
       {
         info: {
@@ -201,33 +205,38 @@ export const homepageData = {
             "Renew",
           ],
         },
-        album: [
-          //type은 꼭 image와 video 로 구분
-          [
-            {
-              type: "image",
-              src: "/images/modal/gallery/album/modal-album-koreren1.webp",
-            },
-          ],
-          [
-            {
-              type: "image",
-              src: "/images/modal/gallery/album/modal-album-koreren2.webp",
-            },
-          ],
-          [
-            {
-              type: "image",
-              src: "/images/modal/gallery/album/modal-album-koreren3.webp",
-            },
-          ],
-          [
-            {
-              type: "image",
-              src: "/images/modal/gallery/album/modal-album-koreren4.webp",
-            },
-          ],
-        ],
+        album: {
+          needTap: false,
+          content: {
+            default: [
+              //type은 꼭 image와 video 로 구분
+              [
+                {
+                  type: "image",
+                  src: "/images/modal/gallery/album/modal-album-koreren1.webp",
+                },
+              ],
+              [
+                {
+                  type: "image",
+                  src: "/images/modal/gallery/album/modal-album-koreren2.webp",
+                },
+              ],
+              [
+                {
+                  type: "image",
+                  src: "/images/modal/gallery/album/modal-album-koreren3.webp",
+                },
+              ],
+              [
+                {
+                  type: "image",
+                  src: "/images/modal/gallery/album/modal-album-koreren4.webp",
+                },
+              ],
+            ],
+          },
+        },
       },
       {
         info: {
@@ -262,31 +271,36 @@ export const homepageData = {
           },
           points: ["#온천수", "#자연유래", "#미네랄", "#더마솔루션"],
         },
-        album: [
+        album: {
+          needTap: false,
           //type은 꼭 image와 video 로 구분
-          [
-            {
-              type: "image",
-              src: "/images/modal/gallery/album/modal-album-cosmetic1.webp",
-            },
-          ],
-          [
-            {
-              type: "video",
-              src: "/videos/modal/gallery/album/modal-album-cosmetic1.mp4",
-            },
-            {
-              type: "video",
-              src: "/videos/modal/gallery/album/modal-album-cosmetic2.mp4",
-            },
-          ],
-          [
-            {
-              type: "image",
-              src: "/images/modal/gallery/album/modal-album-cosmetic2.webp",
-            },
-          ],
-        ],
+          content: {
+            default: [
+              [
+                {
+                  type: "image",
+                  src: "/images/modal/gallery/album/modal-album-cosmetic1.webp",
+                },
+              ],
+              [
+                {
+                  type: "video",
+                  src: "/videos/modal/gallery/album/modal-album-cosmetic1.mp4",
+                },
+                {
+                  type: "video",
+                  src: "/videos/modal/gallery/album/modal-album-cosmetic2.mp4",
+                },
+              ],
+              [
+                {
+                  type: "image",
+                  src: "/images/modal/gallery/album/modal-album-cosmetic2.webp",
+                },
+              ],
+            ],
+          },
+        },
       },
       {
         info: {
@@ -319,21 +333,30 @@ export const homepageData = {
           },
           points: ["#정보", "#소프트웨어", "#디지털", "#관리"],
         },
-        album: [
+        album: {
           //type은 꼭 image와 video 로 구분
-          [
-            {
-              type: "image",
-              src: "/images/modal/gallery/album/modal-album-ITdevelop1.webp",
-            },
-          ],
-          [
-            {
-              type: "image",
-              src: "/images/modal/gallery/album/modal-album-ITdevelop2.webp",
-            },
-          ],
-        ],
+          needTap: true,
+          taps: ["Website", "CRM"],
+          content: {
+            Website: [
+              [
+                {
+                  type: "image",
+                  src: "/images/modal/gallery/album/modal-album-ITdevelop1.webp",
+                  href: "http://hpenc.com/",
+                },
+              ],
+            ],
+            CRM: [
+              [
+                {
+                  type: "image",
+                  src: "/images/modal/gallery/album/modal-album-ITdevelop2.webp",
+                },
+              ],
+            ],
+          },
+        },
       },
     ],
   },

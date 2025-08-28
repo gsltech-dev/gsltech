@@ -10,6 +10,22 @@ const Modal = ({ onClose, modalId, data, section }) => {
   const mainModalRef = useRef();
   const totalModalRef = useRef();
 
+  // 1) 초기 키 계산
+  const hasTabs = !!modalData?.album?.needTap;
+  const firstKey = hasTabs
+    ? modalData?.album?.taps?.[0] ?? "default"
+    : "default";
+
+  // 2) 초기 상태 설정(초기자 함수 사용)
+  const [albumKey, setAlbumKey] = useState(() => firstKey);
+
+  // 3) 안전하게 콘텐츠 열기 (없으면 빈 배열)
+  const raw = modalData.album.content[albumKey];
+  console.log("hasTabs :" + hasTabs);
+  console.log("firstkey :" + firstKey);
+  console.log("albumKey:" + albumKey);
+  console.log(raw);
+
   const [modalY, setModalY] = useState(0); // 현재 Y 위치 상태
 
   //휠 동작 시 모달 움짐임 및 변수 제어
@@ -103,7 +119,6 @@ const Modal = ({ onClose, modalId, data, section }) => {
       "wheel",
       (e) => {
         e.preventDefault(); // 기본 스크롤 막기
-
         handleWheel(e); // 위치 이동 처리
         checkBounds(); // 모달의 위치가 특정 기준 지났는지 판단
       },
@@ -138,16 +153,6 @@ const Modal = ({ onClose, modalId, data, section }) => {
       startY = currentY;
       checkBounds();
     };
-
-    totalEl.addEventListener(
-      "wheel",
-      (e) => {
-        e.preventDefault();
-        handleWheel(e);
-        checkBounds();
-      },
-      { passive: false }
-    );
 
     mm.add("(max-width: 768px)", () => {
       const el = totalModalRef.current;
@@ -265,7 +270,7 @@ const Modal = ({ onClose, modalId, data, section }) => {
         {/* desc-wrapper */}
         <div className="desc-wrapper flex flex-col w-full h-auto  mt-[5vw] font-normal pl-[0.5vw]">
           {/* desc-text */}
-          {console.log(isMobile)}
+
           {isMobile ? (
             <div className="desc-text w-full md:w-2/3 mt-[7vw] md:mt-0 text-[4vw] leading-[6vw] md:leading-[1.9vw] md:text-[1.3vw] h-auto ">
               {modalData.desc.texts.mobile.map((text, i) =>
@@ -293,7 +298,29 @@ const Modal = ({ onClose, modalId, data, section }) => {
         </div>
         {/* album */}
         <div className="albums-wrapper w-full h-auto md:mt-[6vw] mt-[18vw] flex flex-col md:gap-[1.1vw] gap-[4vw] ">
-          {modalData.album.map((row, i) => (
+          {modalData.album.needTap ? (
+            <div className="album-tap text-[4.5vw] md:text-[2.1vw] font-[400] flex w-full md:h-[4vw] h-[8vw] md:gap-[1vw] gap-[3vw]">
+              {modalData.album.taps.map((tap, i) => (
+                <div
+                  ket={i}
+                  className={`tap-item flex justify-center items-center md:w-[14.5%] w-[25%] cursor-pointer border-b-2
+                  ${
+                    albumKey === tap
+                      ? "text-black border-black"
+                      : "text-[#e1e1e1] border-[#e1e1e1]"
+                  }`}
+                  onClick={() => {
+                    setAlbumKey(tap);
+                  }}
+                >
+                  {tap}
+                </div>
+              ))}
+            </div>
+          ) : (
+            " "
+          )}
+          {raw.map((row, i) => (
             <div
               key={i}
               className="album-wrapper w-full flex flex-col md:flex-row gap-[4vw] md:gap-[1.1vw]"
@@ -304,12 +331,27 @@ const Modal = ({ onClose, modalId, data, section }) => {
                     key={idx}
                     className="album-box grow-1 h-auto overflow-hidden rounded-xl md:rounded-xl "
                   >
-                    <img
-                      loading="lazy"
-                      className="img w-full h-full object-cover object-center"
-                      src={item.src}
-                      alt=""
-                    />
+                    {item.href ? (
+                      <a
+                        href={item.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <img
+                          loading="lazy"
+                          className="img w-full h-full object-cover object-center"
+                          src={item.src}
+                          alt=""
+                        />
+                      </a>
+                    ) : (
+                      <img
+                        loading="lazy"
+                        className="img w-full h-full object-cover object-center"
+                        src={item.src}
+                        alt=""
+                      />
+                    )}
                   </div>
                 ) : (
                   <div

@@ -222,18 +222,6 @@ export const homepageData = {
                   src: "/images/modal/gallery/album/modal-album-koreren2.webp",
                 },
               ],
-              [
-                {
-                  type: "image",
-                  src: "/images/modal/gallery/album/modal-album-koreren3.webp",
-                },
-              ],
-              [
-                {
-                  type: "image",
-                  src: "/images/modal/gallery/album/modal-album-koreren4.webp",
-                },
-              ],
             ],
           },
         },

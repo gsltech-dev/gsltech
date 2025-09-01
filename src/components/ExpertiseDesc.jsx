@@ -74,7 +74,7 @@ const ExpertiseDesc = ({
 
             const iid = setInterval(() => {
               if (runId !== runIdRef.current) return;
-              if (originText.trim() === "") return; // 공백은 건너뛰기(선택)
+              if (desired.trim() === "") return; // 공백은 건너뛰기(선택)
               span.textContent =
                 charset[Math.floor(Math.random() * charset.length)];
             }, changeInterval);
@@ -170,7 +170,7 @@ const ExpertiseDesc = ({
 
             const iid = setInterval(() => {
               if (runId !== runIdRef.current) return;
-              if (originText.trim() === "") return;
+              if (desired.trim() === "") return;
               span.textContent =
                 charset[Math.floor(Math.random() * charset.length)];
             }, changeInterval);

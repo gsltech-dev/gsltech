@@ -50,7 +50,7 @@ export default function VideoSequence({ introTextRefs, videoUrls }) {
         }
       );
 
-      console.log(nextVideo);
+      // console.log(nextVideo);
       // 다음 비디오 아래 배치
       gsap.set(nextVideo, {
         display: "block",

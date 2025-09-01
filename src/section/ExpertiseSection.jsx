@@ -270,7 +270,6 @@ const ExpertiseSection = ({ data }) => {
                 muted
                 loop
                 playsInline
-                src=""
               ></video>
               <video
                 className="following-video rounded-3xl current-video object-cover absolute w-full h-full"
@@ -278,7 +277,6 @@ const ExpertiseSection = ({ data }) => {
                 muted
                 loop
                 playsInline
-                src=""
               ></video>
             </div>
           </div>

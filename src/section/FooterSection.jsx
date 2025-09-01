@@ -23,7 +23,7 @@ const FooterSection = ({ data }) => {
     const words = el.querySelectorAll(".footer-one-word");
 
     mm.add("(min-width: 769px)", () => {
-      const pcVideoEl = el.querySelector(".pc-footer-video");
+      // const pcVideoEl = el.querySelector(".pc-footer-video");
       const footerTl = gsap.timeline({
         scrollTrigger: {
           trigger: el,
@@ -32,14 +32,14 @@ const FooterSection = ({ data }) => {
           scrub: true,
           // markers: true,
           pin: el,
-          onLeave: () => {
-            pcVideoEl.classList.remove("opacity-0");
-            pcVideoEl.classList.add("opacity-100");
-            pcVideoEl.muted = true;
-            pcVideoEl.play().catch((e) => {
-              console.warn("PC video play failed:", e);
-            });
-          },
+          // onLeave: () => {
+          //   pcVideoEl.classList.remove("opacity-0");
+          //   pcVideoEl.classList.add("opacity-100");
+          //   pcVideoEl.muted = true;
+          //   pcVideoEl.play().catch((e) => {
+          //     console.warn("PC video play failed:", e);
+          //   });
+          // },
         },
       });
 
@@ -50,7 +50,7 @@ const FooterSection = ({ data }) => {
     });
 
     mm.add("(max-width: 768px)", () => {
-      const mobileVideoEl = el.querySelector(".mobile-footer-video");
+      // const mobileVideoEl = el.querySelector(".mobile-footer-video");
 
       const footerTl = gsap.timeline({
         scrollTrigger: {
@@ -60,12 +60,12 @@ const FooterSection = ({ data }) => {
           scrub: true,
           // markers: true,
           pin: el,
-          onLeave: () => {
-            mobileVideoEl.classList.remove("opacity-0");
-            mobileVideoEl.classList.add("opacity-100");
-            mobileVideoEl.muted = true;
-            mobileVideoEl?.play(); // 스크롤이 end 지점에 도달했을 때 비디오 재생
-          },
+          // onLeave: () => {
+          //   mobileVideoEl.classList.remove("opacity-0");
+          //   mobileVideoEl.classList.add("opacity-100");
+          //   mobileVideoEl.muted = true;
+          //   mobileVideoEl?.play(); // 스크롤이 end 지점에 도달했을 때 비디오 재생
+          // },
         },
       });
       footerTl.to(words, {
@@ -125,7 +125,7 @@ const FooterSection = ({ data }) => {
           </div>
         </div>
       </div>
-      <div className="footer-video relative bg-indigo-100 md:w-[100vw] left-1/2 -translate-x-1/2 w-[100vw] md:aspect-[5.106/1]  aspect-[1.233/1]  overflow-hidden">
+      {/* <div className="footer-video relative bg-indigo-100 md:w-[100vw] left-1/2 -translate-x-1/2 w-[100vw] md:aspect-[5.106/1]  aspect-[1.233/1]  overflow-hidden">
         <video
           className="mobile-footer-video absolute opacity-0 w-full h-auto object-contain"
           src={data.mobileVideo}
@@ -136,7 +136,7 @@ const FooterSection = ({ data }) => {
           src={data.pcVideo}
           muted
         ></video>
-      </div>
+      </div> */}
     </section>
   );
 };

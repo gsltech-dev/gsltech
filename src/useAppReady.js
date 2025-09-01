@@ -24,7 +24,7 @@ export default function useAppReady({ setProgress, setIsReady }) {
         smooth: true,
         lerp: 0.07, // 부드러움 조절
         touchMultiplier: 0.7, //모바일 감도
-        wheelMultiplier: 0.7, //  스크롤 거리 조절 0.5 -> 휠 한번에 화면의 10%이동
+        wheelMultiplier: 0.65, //  스크롤 거리 조절 0.5 -> 휠 한번에 화면의 10%이동
         normalizeWheel: true, // OS별 휠 차이를 보정
       });
 

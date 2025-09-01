@@ -344,7 +344,7 @@ const Modal = ({ onClose, modalId, data, section }) => {
                         />
                         {/* 오버레이 */}
                         <div className="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                          <span className="text-white font-[300] text-[5vw]">
+                          <span className="text-white font-[300] text-[3vw]">
                             Visit Website
                           </span>
                         </div>

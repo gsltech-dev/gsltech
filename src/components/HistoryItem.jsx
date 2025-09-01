@@ -138,7 +138,7 @@ const HistoryItem = ({
       }}
     >
       <div className="hover-background absolute opacity-0 bg-[#161616] left-0 bottom-0 w-full h-full"></div>
-      <div className="history-content items-center flex h-auto w-5/7 md:w-1/3">
+      <div className="history-content items-center flex h-auto w-6/7 md:w-1/3">
         {/* year */}
         <div className="flex h-full history-text align-middle w-1/4 text-[2.8vw]  lg:font-light font-light md:text-[0.9vw]  justify-center items-center year-title z-20">
           {year}

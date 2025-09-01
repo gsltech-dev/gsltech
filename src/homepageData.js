@@ -4,11 +4,10 @@ export const homepageData = {
       "videos/intro/technology.mp4",
       "videos/intro/wellness.mp4",
       "videos/intro/qualityOfLife.mp4",
-      "videos/intro/ITDevelopment.mp4",
     ],
     introWords: {
       left: "GSLTECH",
-      right: ["TECHNOLOGY", "WELLNESS", "QUALITY OF LIFE", "IT development"],
+      right: ["TECHNOLOGY", "WELLNESS", "QUALITY OF LIFE"],
     },
     introText: {
       text: "Building a healthy foundation for your daily life, with technology and empathy",
@@ -91,13 +90,7 @@ export const homepageData = {
     ],
     default_video: "/videos/expertise/technology.mp4",
     //title과 description, video는 각 순서에 대응
-    title: [
-      "Product R&D",
-      "Quality Management",
-      "Manufacturing",
-      "Website",
-      "Application",
-    ],
+    title: ["Product R&D", "QM", "Manufacturing", "Website", "Application"],
     description: [
       [
         "INNOVATION",
@@ -119,7 +112,7 @@ export const homepageData = {
         "RELIABILITY",
       ],
       ["PRODUCTION", "PRECISION", "EFFICIENCY", "ASSEMBLY", "CHAIN"],
-      ["UX/UI", "BRADN", "RESPONSIVE", "DESIGN", "DIGITAL"],
+      ["UX/UI", "BRAND", "RESPONSIVE", "DESIGN", "DIGITAL"],
       [
         "SOFTWARE",
         "DASHBOARD",
@@ -196,15 +189,7 @@ export const homepageData = {
               "웰니스 솔루션을 선보일 것입니다.",
             ],
           },
-          points: [
-            "#회복",
-            "#균형",
-            "#휴식",
-            "#에너지",
-            "#Korea",
-            "#Core",
-            "Renew",
-          ],
+          points: ["#휴식", "#에너지", "#Korea", "#Core", "#Renew"],
         },
         album: {
           needTap: false,
@@ -270,7 +255,8 @@ export const homepageData = {
               "검증된 천연 성분을 바탕으로",
               "비누부터 스킨케어, 화장품 까지",
               " ",
-              "피부에 가장 이상적인 제품 라인업을 개발하고 있습니다.",
+              "피부에 가장 이상적인",
+              "제품 라인업을 개발하고 있습니다.",
               "자연과 기술이 만나 탄생한 차별화된 효능으로,",
               "피부 본연의 건강함을 되찾는 경험을 약속합니다.",
             ],
@@ -310,7 +296,7 @@ export const homepageData = {
                 [
                   {
                     type: "image",
-                    src: "/images/modal/gallery/album/modal-album-cosmetic1.webp",
+                    src: "/images/modal/gallery/album/modal-album-cosmetic1-mobile.webp",
                   },
                 ],
                 [
@@ -326,7 +312,7 @@ export const homepageData = {
                 [
                   {
                     type: "image",
-                    src: "/images/modal/gallery/album/modal-album-cosmetic2.webp",
+                    src: "/images/modal/gallery/album/modal-album-cosmetic2-mobile.webp",
                   },
                 ],
               ],
@@ -357,10 +343,12 @@ export const homepageData = {
               " ",
               "현재 브랜드 웹사이트와 효율적인 운영을 위한",
               "관리 프로그램을 제작하고 있으며,",
-              "파트너사의 요청에 따른 맞춤형 솔루션 개발도 지원합니다.",
+              "파트너사의 요청에 따른",
+              "맞춤형 솔루션 개발도 지원합니다.",
               " ",
               "향후 디바이스와 연동되는 모바일 앱까지",
-              "사업영역을 확장할 수 있는 잠재력을 보유하고 있습니다.",
+              "사업영역을 확장할 수 있는",
+              "잠재력을 보유하고 있습니다.",
             ],
           },
           points: ["#정보", "#소프트웨어", "#디지털", "#관리"],
@@ -379,6 +367,13 @@ export const homepageData = {
                     href: "http://hpenc.com/",
                   },
                 ],
+                [
+                  {
+                    type: "image",
+                    src: "/images/modal/gallery/album/modal-album-website2.webp",
+                    href: "https://gsltech.co.kr",
+                  },
+                ],
               ],
               mobile: [
                 [
@@ -386,6 +381,13 @@ export const homepageData = {
                     type: "image",
                     src: "/images/modal/gallery/album/modal-album-website1-mobile.webp",
                     href: "http://hpenc.com/",
+                  },
+                ],
+                [
+                  {
+                    type: "image",
+                    src: "/images/modal/gallery/album/modal-album-website2-mobile.webp",
+                    href: "https://gsltech.co.kr",
                   },
                 ],
               ],

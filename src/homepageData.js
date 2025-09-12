@@ -142,7 +142,7 @@ export const homepageData = {
     text: "Got a project in mind? We're listening :)",
     breakPoint: ["mind?"],
     email: "gslt@gsland.tech",
-    tel: "02-515-2026",
+    tel: "02-545-2026",
     address: "서울특별시 강남구 언주로 634",
     addressDetail: "4층, 지에스엘텍",
     mobileVideo: "/videos/footer/mobile-footer.mp4",

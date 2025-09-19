@@ -161,8 +161,8 @@ export const homepageData = {
           //btnText : null 로 할 경우 btn 영역 삭제
           types: ["Healthcare brand"],
           title: "KOREREN",
-          // link: "https://homerun.today/",
-          btnText: null,
+          link: "https://koreren.co.kr/",
+          btnText: "Visit Website",
         },
         mainImg: "/images/modal/gallery/main/modal-main-koreren.webp",
         desc: {
@@ -374,6 +374,13 @@ export const homepageData = {
                     href: "https://gsltech.co.kr",
                   },
                 ],
+                [
+                  {
+                    type: "image",
+                    src: "/images/modal/gallery/album/modal-album-website3.webp",
+                    href: "https://koreren.co.kr/",
+                  },
+                ],
               ],
               mobile: [
                 [
@@ -387,6 +394,13 @@ export const homepageData = {
                   {
                     type: "image",
                     src: "/images/modal/gallery/album/modal-album-website2-mobile.webp",
+                    href: "https://gsltech.co.kr",
+                  },
+                ],
+                [
+                  {
+                    type: "image",
+                    src: "/images/modal/gallery/album/modal-album-website3-mobile.webp",
                     href: "https://gsltech.co.kr",
                   },
                 ],
